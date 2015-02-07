@@ -51,8 +51,8 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 	#log
 	Route::group(array('prefix' => '/log'), function()
 	{
-		Route::get('/in', 'securhat\api\v1b0\LogController@login');
-		Route::get('/out', 'securhat\api\v1b0\LogController@logout');
+		Route::get('/out', 'securhat\api\v1b0\LogController@logOut');
+		Route::post('/in', 'securhat\api\v1b0\LogController@logIn');
 		Route::group(array('prefix' => '/user/{username}', 'before' => 'requireExistingUsername.api'), function()
 		{
 			Route::get('/', 'securhat\api\v1b0\UserController@show');

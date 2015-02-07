@@ -1,7 +1,7 @@
 <?php
 namespace securhat\api\v1b0;
-use model\securhat\v1b0\Curhat;
-use model\securhat\v1b0\User;
+use model\v1b0\Curhat;
+use model\v1b0\User;
 use \DB;
 use \Response;
 class CurhatController extends \BaseController{

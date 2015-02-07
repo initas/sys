@@ -1,5 +1,4 @@
 <?php
-
 class BaseController{
 	public function checkStatuses($statuses){
 		$response = true;

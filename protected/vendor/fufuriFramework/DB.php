@@ -127,8 +127,16 @@ class DB{
 		self::$from = $tableName;
 		return new static;
 	}
-	public static function where($field, $operator, $value){
-		self::$where .= "and `".$field."` ".$operator.' "'.$value.'" ';
+	public static function where($field, $operator, $value, $callback = null){
+		$field = '`'.$field.'`';
+		if(is_callable($callback)){
+			$field = "(".$field;
+		}
+		self::$where .= 'and '.$field.' '.$operator.' "'.$value.'" ';
+		if(is_callable($callback)){
+			$callback(new static);
+			self::$where .= ") ";
+		}
 		self::$where = trim(self::$where, 'and');
 		return new static;
 	}

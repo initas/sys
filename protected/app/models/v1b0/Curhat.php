@@ -1,7 +1,7 @@
 <?php
-namespace model\securhat\v1b0;
+namespace model\v1b0;
 use \Response;
-class Curhat extends \DB{
+class Curhat extends \BaseModel{
 	/*
 	|--------------------------------------------------------------------------
 	| Basic Setups

@@ -1,6 +1,6 @@
 <?php
 namespace securhat\api\v1b0;
-use model\securhat\v1b0\User;
+use model\v1b0\User;
 use \Response;
 class UserController extends \BaseController{
 	
@@ -28,13 +28,5 @@ class UserController extends \BaseController{
 	}
 	public function store(){
 		
-	}
-	
-	/*--- Additional Controller ---*/
-	public function login($username){
-		$user = User::getUser($username);
-		$userId = $user['result']['id'];
-		$response = Curhat::getUserCurhats($userId);
-		return Response::json($response);
 	}
 }

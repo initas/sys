@@ -1,7 +1,7 @@
 <?php
-namespace model\securhat\v1b0;
+namespace model\v1b0;
 use \Response;
-class User extends \DB{
+class User extends \BaseModel{
 	/*
 	|--------------------------------------------------------------------------
 	| Basic Setups
@@ -71,12 +71,4 @@ class User extends \DB{
 		$result = User::delete();
 	}
 	
-	#authorization
-	public static function getUserLoginData(){
-		$username = getHeader('username');
-		$email = getHeader('email');
-		$db = User::where('username', '=', $username)->orWhere('email', '=', $email)->first();
-		$response = Response::validateQueryResponse($db);
-		return $response;
-	}
 }
