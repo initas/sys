@@ -48,6 +48,13 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 		});
 	});
 	
+	#img
+	Route::group(array('prefix' => '/img'), function()
+	{
+		Route::get('/curhat/{size}/{file_name}', 'securhat\api\v1b0\ImageController@getCurhatImage');
+		Route::post('/', 'securhat\api\v1b0\ImageController@uploadImage');
+	});
+	
 	#log
 	Route::group(array('prefix' => '/log'), function()
 	{

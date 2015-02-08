@@ -4,6 +4,7 @@ use model\v1b0\Curhat;
 use model\v1b0\User;
 use \DB;
 use \Response;
+use \Auth;
 class CurhatController extends \BaseController{
 	
 	/*--- Implemented Controller ---*/
@@ -28,21 +29,30 @@ class CurhatController extends \BaseController{
 		return Response::json($response);
 	}
 	public function save(){
+		
+		$file = $_FILES["image"];
+		$uploadCurhatImage = Curhat::uploadCurhatImage($file);
+		ss();
+		
+		
 		DB::beginTransaction();
 		$statuses = array();
 		
-		$userLoginData = User::getUserLoginData();
+		$userLoginData = Auth::getUserLoginData();
 		$user_id = $userLoginData['result']['id'];
 		
 		$storeCurhat = Curhat::saveCurhat($user_id);
 		$statuses[] = $storeCurhat['status'];
 		if($storeCurhat['status']==SUCCESS){
 			$response['data'] = $storeCurhat['result'];
-			/*$uploadCurhatImage = Curhat::uploadCurhatImage();
+			
+			$file = $_FILES["image"];
+			$uploadCurhatImage = Curhat::uploadCurhatImage($file);
 			$statuses[] = $uploadCurhatImage['status'];
 			if($storeCurhat['status']!=SUCCESS){
 				$response['errors'] = $uploadCurhatImage['errors'];
-			}*/
+			}
+			
 		}else{
 			$response['errors'] = $storeCurhat['errors'];
 		}
