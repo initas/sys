@@ -1,5 +1,6 @@
 <?php
 namespace model\v1b0;
+use \File;
 use \Response;
 class Curhat extends \BaseModel{
 	/*
@@ -8,6 +9,14 @@ class Curhat extends \BaseModel{
 	|--------------------------------------------------------------------------
 	*/
 	protected static $table = 'curhats';
+	const BELONGS_TO = 1;
+	const BELONGS_TO_MANY = 2;
+	
+	public static $relationsData = array(
+		'user'				=> array(self::BELONGS_TO, 'model\v1b0\User'),
+		'to_user'			=> array(self::BELONGS_TO, 'model\v1b0\User'),
+		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Image', 'curhat_images'),
+	);
 	
 	/*
 	|--------------------------------------------------------------------------
@@ -149,34 +158,9 @@ class Curhat extends \BaseModel{
 	
 	#file
 	public static function uploadCurhatImage($file){
-		//Your Image
-		$imgSrc = $file['tmp_name'];
-		
-		//getting the image dimensions
-		list($width, $height) = getimagesize($imgSrc);
-		
-		//saving the image into memory (for manipulation with GD Library)
-		$myImage = imagecreatefromjpeg($imgSrc);
-		
-		// calculating the part of the image to use for thumbnail
-		if ($width > $height) {
-		  $y = 0;
-		  $x = ($width - $height) / 2;
-		  $smallestSide = $height;
-		} else {
-		  $x = 0;
-		  $y = ($height - $width) / 2;
-		  $smallestSide = $width;
-		}
-		
-		// copying the part into thumbnail
-		$thumbSize = 100;
-		$thumb = imagecreatetruecolor($thumbSize, $thumbSize);
-		imagecopyresampled($thumb, $myImage, 0, 0, $x, $y, $thumbSize, $thumbSize, $smallestSide, $smallestSide);
-		
-		//final output
-		header('Content-type: image/jpeg');
-		imagejpeg($thumb);
+		$url = $_POST['baseUrl'];
+		$destination = $url.'/img/curhat/';
+		File::uploadImage($_FILES['image'], $destination);
 	}
 	
 }

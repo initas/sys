@@ -26,6 +26,38 @@ class DB{
 	
 	public function __construct(){}
 	
+	#relation
+	public static function __callStatic($name, $arguments)
+	{
+		$relationsData = static::$relationsData;
+		if(array_key_exists($name, $relationsData)){
+			if($relationsData[$name][0]==static::BELONGS_TO_MANY){
+				self::$table = $relationsData[$name][2];
+				$foreignTable =  self::getTableId($relationsData[$name][1]::$table);
+				$primaryTable = self::getTableId(static::$table);
+				self::$from = $primaryTable.', '.$foreignTable;
+			}
+			return new static;
+		}
+	}
+	
+	public static function synch($ids, $secondary_ids){
+		$val = array();
+		if(!is_array($ids)){
+			$ids = array($ids);
+		}
+		if(!is_array($secondary_ids)){
+			$secondary_ids = array($secondary_ids);
+		}
+		foreach($ids as $id){
+			foreach($secondary_ids as $secondary_id){
+				$val[] = '("'.$id.'", "'.$secondary_id.'")';
+			}
+		}
+		echo 'insert into '.self::$table.' ('.self::$from.') values '.implode(', ', $val);
+		self::refreshQuery();
+	}
+	
 	#grabber
 	public static function get(){
 		$query = self::getQuery();
@@ -163,6 +195,10 @@ class DB{
 		}
 		return $tableName;
 	}
+	public static function getTableId($table){
+		$tableId = str_ireplace('s_id', '_id', $table.'_id');
+		return $tableId;
+	}
 	public static function getColumnNames(){
 		$tableName = self::getTableName();
 		$pdo = self::openPdo()->prepare('DESCRIBE `'.$tableName.'`');
@@ -202,6 +238,7 @@ class DB{
 		self::$table = null;
 		self::$raw = null;
 		self::$field = '*';
+		self::$from = null;
 		self::$where = '';
 		self::$orderBy = '';
 		self::$limit = null;

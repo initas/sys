@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2015 at 12:05 AM
+-- Generation Time: Feb 11, 2015 at 07:48 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `curhats` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `to_user_id` (`to_user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=69 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=77 ;
 
 --
 -- Dumping data for table `curhats`
@@ -82,7 +82,32 @@ INSERT INTO `curhats` (`id`, `user_id`, `to_user_id`, `description`, `created_at
 (33, 1, NULL, 'test', '2015-02-02 22:16:05', NULL, NULL),
 (34, 1, NULL, 'test', '2015-02-02 22:16:37', NULL, NULL),
 (67, 1, NULL, 'mau curhat~', '2015-02-02 22:36:30', NULL, NULL),
-(68, 2, NULL, 'mau curhat juga~', '2015-02-02 22:37:56', NULL, NULL);
+(68, 2, NULL, 'mau curhat juga~', '2015-02-02 22:37:56', NULL, NULL),
+(69, 1, NULL, 'mau curhat~', '2015-02-07 20:15:21', NULL, NULL),
+(70, 1, 2, 'mau curhat~', '2015-02-07 20:21:58', NULL, NULL),
+(72, 1, NULL, 'mau curhat~', '2015-02-08 01:21:59', NULL, NULL),
+(73, 1, NULL, 'mau curhat~', '2015-02-08 01:22:08', NULL, NULL),
+(74, 1, NULL, 'mau curhat~', '2015-02-08 10:14:29', NULL, NULL),
+(75, 1, NULL, 'mau curhat~', '2015-02-08 11:17:25', NULL, NULL),
+(76, 1, NULL, 'mau curhat~', '2015-02-08 11:43:59', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `curhat_attachment`
+--
+
+CREATE TABLE IF NOT EXISTS `curhat_attachment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curhat_id` int(11) NOT NULL,
+  `curhat_image_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  KEY `curhat_id` (`curhat_id`),
+  KEY `image_id` (`curhat_image_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 -- --------------------------------------------------------
 
@@ -116,6 +141,25 @@ CREATE TABLE IF NOT EXISTS `friend_requests` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE IF NOT EXISTS `images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `file_name` text NOT NULL,
+  `url` text NOT NULL,
+  `size` int(11) NOT NULL,
+  `mime` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -244,6 +288,13 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `full_name`, `place_
 ALTER TABLE `curhats`
   ADD CONSTRAINT `curhats_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `curhats_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `curhat_attachment`
+--
+ALTER TABLE `curhat_attachment`
+  ADD CONSTRAINT `curhat_attachment_ibfk_2` FOREIGN KEY (`curhat_image_id`) REFERENCES `images` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `curhat_attachment_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

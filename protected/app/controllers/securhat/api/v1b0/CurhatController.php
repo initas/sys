@@ -13,6 +13,7 @@ class CurhatController extends \BaseController{
 		return Response::json($response);
 	}
 	public function show($curhat_id){
+		Curhat::curhat_attachment()->synch(array('1', '2', '3'), array('4', '5', '6'));
 		$response = Curhat::getCurhat($curhat_id);
 		return Response::json($response);
 	}
@@ -29,12 +30,6 @@ class CurhatController extends \BaseController{
 		return Response::json($response);
 	}
 	public function save(){
-		
-		$file = $_FILES["image"];
-		$uploadCurhatImage = Curhat::uploadCurhatImage($file);
-		ss();
-		
-		
 		DB::beginTransaction();
 		$statuses = array();
 		
@@ -48,10 +43,10 @@ class CurhatController extends \BaseController{
 			
 			$file = $_FILES["image"];
 			$uploadCurhatImage = Curhat::uploadCurhatImage($file);
-			$statuses[] = $uploadCurhatImage['status'];
+			/*$statuses[] = $uploadCurhatImage['status'];
 			if($storeCurhat['status']!=SUCCESS){
 				$response['errors'] = $uploadCurhatImage['errors'];
-			}
+			}*/
 			
 		}else{
 			$response['errors'] = $storeCurhat['errors'];

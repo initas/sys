@@ -1,8 +1,8 @@
 <?php
-	function dd($var){
+	function dd($var = null){
 		var_dump($var);
 	}
-	function ss($var){
+	function ss($var = null){
 		dd($var);
 		exit();
 	}

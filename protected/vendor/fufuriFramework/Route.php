@@ -73,7 +73,7 @@ class Route{
 		}
 	}
 	public static function delete(){
-		if($_SERVER['REQUEST_METHOD']=='DELET'){
+		if($_SERVER['REQUEST_METHOD']=='DELETE'){
 			$arguments = func_get_args();
 			self::findMatchUrl($arguments);
 		}
