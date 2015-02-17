@@ -43,7 +43,7 @@ class Curhat extends \BaseModel{
 	
 	#retrieve
 	public static function getCurhats(){
-		$db = Curhat::paginate(15);
+		$db = Curhat::paginate();
 		$db = self::append($db, 'appendQuery');
 		$response = Response::validateQueryResponse($db);
 		return $response;

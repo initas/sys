@@ -69,7 +69,7 @@ class DB{
 		return $response;
 	}
 	
-	public static function paginate($perPage = 3){
+	public static function paginate($perPage = 15){
 		$query = self::getQuery();
 		
 		$total = 0;
@@ -294,6 +294,15 @@ class DB{
 		self::$where = '';
 		self::$orderBy = '';
 		self::$limit = null;
+		self::$paginateDetails = null;
+		self::$paginateTotal = null;
+	}
+	public static function refreshObject($db){
+		$db->query = null;
+		$db->error = null;
+		$db->total = null;
+		$db->paginate = null;
+		$db->data = null;
 	}
 	
 	#db

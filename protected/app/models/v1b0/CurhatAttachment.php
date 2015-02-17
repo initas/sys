@@ -11,7 +11,7 @@ class CurhatAttachment extends \BaseModel{
 	
 	#retrieve
 	public static function getCurhatAttachments($curhat_id){
-		$db = CurhatAttachment::where('curhat_id', '=', $curhat_id)->get();
+		$db = CurhatAttachment::where('curhat_id', '=', $curhat_id)->paginate();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
