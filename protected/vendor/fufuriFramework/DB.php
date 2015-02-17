@@ -8,6 +8,9 @@ class DB{
 	protected static $orderBy = '';
 	protected static $limit;
 	
+	protected static $primaryTable;
+	protected static $foreignTable;
+	
 	protected static $connectionStatus;
 	protected static $pdo;
 	protected static $paginateDetails;
@@ -17,6 +20,9 @@ class DB{
 	const MULTI_RESULT = '101';
 	const SINGLE_SAVE_RESULT = '200';
 	const SINGLE_UPDATE_RESULT = '300';
+	const SINGLE_ATTACH_RESULT = '400';
+	const SINGLE_DETACH_RESULT = '500';
+	const SINGLE_SYNCH_RESULT = '600';
 	
 	public $query;
 	public $error;
@@ -33,30 +39,14 @@ class DB{
 		if(array_key_exists($name, $relationsData)){
 			if($relationsData[$name][0]==static::BELONGS_TO_MANY){
 				self::$table = $relationsData[$name][2];
-				$foreignTable =  self::getTableId($relationsData[$name][1]::$table);
-				$primaryTable = self::getTableId(static::$table);
-				self::$from = $primaryTable.', '.$foreignTable;
+				self::$foreignTable =  self::getTableId($relationsData[$name][1]::$table);
+				self::$primaryTable = self::getTableId(static::$table);
+				self::$from = self::$primaryTable.', '.self::$foreignTable;
 			}
 			return new static;
 		}
 	}
 	
-	public static function synch($ids, $secondary_ids){
-		$val = array();
-		if(!is_array($ids)){
-			$ids = array($ids);
-		}
-		if(!is_array($secondary_ids)){
-			$secondary_ids = array($secondary_ids);
-		}
-		foreach($ids as $id){
-			foreach($secondary_ids as $secondary_id){
-				$val[] = '("'.$id.'", "'.$secondary_id.'")';
-			}
-		}
-		echo 'insert into '.self::$table.' ('.self::$from.') values '.implode(', ', $val);
-		self::refreshQuery();
-	}
 	
 	#grabber
 	public static function get(){
@@ -114,6 +104,7 @@ class DB{
 		$tableName = self::getTableName();
 		$columnNames = self::getColumnNames();
 		
+		
 		$columns = array();
 		$values = array();
 		foreach($columnNames as $columnName){
@@ -130,15 +121,76 @@ class DB{
 		$valueQuery = '"'.(implode('","', $values)).'"';
 		$saveQuery = 'insert into '.$tableName.'('.$columnQuery.') values ('.$valueQuery.')';
 		
-		self::executeQuery($saveQuery, DB::SINGLE_SAVE_RESULT);
+		$db = self::executeQuery($saveQuery, DB::SINGLE_SAVE_RESULT);
 		$id = self::openPdo()->lastInsertId();
 		
-		$response = self::from($tableName)->find($id);
-		foreach($response as $id=>$var){
-			$this->$id = $var;
+		if($id>0){
+			$response = self::from($tableName)->find($id);
+			foreach($response as $id=>$var){
+				$this->$id = $var;
+			}
+			$response = $this;
+		}else{
+			$response = $db;
 		}
 		
-		return $this;
+		return $response;
+	}
+	
+	
+	#Relational db
+	public static function attach($ids, $secondary_ids){
+		$response = self::executeRelationalQuery($ids, $secondary_ids, DB::SINGLE_ATTACH_RESULT);
+		return $response;
+	}
+	public static function detach($ids, $secondary_ids){
+		$response = self::executeRelationalQuery($ids, $secondary_ids, DB::SINGLE_DETACH_RESULT);
+		return $response;
+	}
+	public static function synch($ids, $secondary_ids){
+		$response = self::executeRelationalQuery($ids, $secondary_ids, DB::SINGLE_SYNCH_RESULT);
+		return $response;
+	}
+	public static function executeRelationalQuery($ids, $secondary_ids, $row_result_type){
+		$val = array();
+		if(!is_array($ids)){
+			$ids = array($ids);
+		}
+		if(!is_array($secondary_ids)){
+			$secondary_ids = array($secondary_ids);
+		}
+		foreach($ids as $id){
+			foreach($secondary_ids as $secondary_id){
+				$val[] = '("'.$id.'", "'.$secondary_id.'")';
+			}
+		}
+		
+		$deleteWhere = implode('" or `'.self::$primaryTable.'` = "', $ids);
+		$deleteWhere = '`'.self::$primaryTable.'` = "'.$deleteWhere.'"';
+		$deleteQuery = '
+			DELETE FROM
+				`'.self::$table.'`
+			WHERE 
+				'.$deleteWhere.';
+		';
+		
+		$inserQuery = '
+			INSERT INTO
+				`'.self::$table.'` ('.self::$from.')
+			VALUES
+				'.implode(', ', $val).';
+			';
+			
+		if($row_result_type == DB::SINGLE_ATTACH_RESULT){
+			$relationalQuery = $inserQuery;
+		}elseif($row_result_type == DB::SINGLE_DETACH_RESULT){
+			$relationalQuery = $deleteQuery;
+		}elseif($row_result_type == DB::SINGLE_SYNCH_RESULT){
+			$relationalQuery = $deleteQuery.' '.$inserQuery;
+		}
+		
+		self::executeQuery($relationalQuery, $row_result_type);
+		self::refreshQuery();
 	}
 	
 	#query
@@ -295,6 +347,15 @@ class DB{
 		}
 		
 		self::refreshQuery();
+		return $db;
+	}
+	public static function append($db, $callback){
+		$results = $db->data;
+		foreach($results as $index => $result){
+			$response = call_user_func(array(get_called_class(), $callback), $result);
+			$results[$index] = array_merge($result, $response);
+		}
+		$db->data = $results;
 		return $db;
 	}
 }

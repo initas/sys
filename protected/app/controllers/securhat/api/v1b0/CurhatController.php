@@ -1,8 +1,10 @@
 <?php
 namespace securhat\api\v1b0;
 use model\v1b0\Curhat;
+use model\v1b0\Image;
 use model\v1b0\User;
 use \DB;
+use \Input;
 use \Response;
 use \Auth;
 class CurhatController extends \BaseController{
@@ -13,7 +15,6 @@ class CurhatController extends \BaseController{
 		return Response::json($response);
 	}
 	public function show($curhat_id){
-		Curhat::curhat_attachment()->synch(array('1', '2', '3'), array('4', '5', '6'));
 		$response = Curhat::getCurhat($curhat_id);
 		return Response::json($response);
 	}
@@ -36,20 +37,41 @@ class CurhatController extends \BaseController{
 		$userLoginData = Auth::getUserLoginData();
 		$user_id = $userLoginData['result']['id'];
 		
-		$storeCurhat = Curhat::saveCurhat($user_id);
-		$statuses[] = $storeCurhat['status'];
-		if($storeCurhat['status']==SUCCESS){
-			$response['data'] = $storeCurhat['result'];
+		$saveCurhat = Curhat::saveCurhat($user_id);
+		$statuses[] = $saveCurhat['status'];
+		if($saveCurhat['status']==SUCCESS){
+			$response['data'] = $saveCurhat['result'];
 			
-			$file = $_FILES["image"];
-			$uploadCurhatImage = Curhat::uploadCurhatImage($file);
-			/*$statuses[] = $uploadCurhatImage['status'];
-			if($storeCurhat['status']!=SUCCESS){
-				$response['errors'] = $uploadCurhatImage['errors'];
-			}*/
+			$file = Input::files("image");
+			$uploadImage = Image::uploadImage($file);
+			$statuses[] = $uploadImage['status'];
+			
+			if($uploadImage['status']==SUCCESS){
+				Input::post(array(
+					'title' => Input::post('image_title', null),
+					'file_name' => $uploadImage['result']['file_name'],
+					'url' => $uploadImage['result']['url'],
+					'size' => $uploadImage['result']['size'],
+					'mime' => $uploadImage['result']['mime']
+				));
+				
+				$saveImage = Image::saveImage($user_id);
+				$statuses[] = $saveImage['status'];
+				
+				if($saveImage['status']==SUCCESS){
+					Curhat::curhat_attachment()->synch(
+						$saveCurhat['result']['id'],
+						$saveImage['result']['id']
+					);
+				}else{
+					$response['errors'] = $saveImage['errors'];
+				}
+			}else{
+				$response['errors'] = $uploadImage['errors'];
+			}
 			
 		}else{
-			$response['errors'] = $storeCurhat['errors'];
+			$response['errors'] = $saveCurhat['errors'];
 		}
 		
 		if($this->checkStatuses($statuses)){

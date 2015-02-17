@@ -1,6 +1,5 @@
 <?php
 namespace model\v1b0;
-use \File;
 use \Response;
 class Curhat extends \BaseModel{
 	/*
@@ -15,7 +14,7 @@ class Curhat extends \BaseModel{
 	public static $relationsData = array(
 		'user'				=> array(self::BELONGS_TO, 'model\v1b0\User'),
 		'to_user'			=> array(self::BELONGS_TO, 'model\v1b0\User'),
-		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Image', 'curhat_images'),
+		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Image', 'curhat_attachments'),
 	);
 	
 	/*
@@ -44,7 +43,8 @@ class Curhat extends \BaseModel{
 	
 	#retrieve
 	public static function getCurhats(){
-		$db = Curhat::paginate();
+		$db = Curhat::paginate(15);
+		$db = self::append($db, 'appendQuery');
 		$response = Response::validateQueryResponse($db);
 		return $response;
 		// user curhat only
@@ -156,11 +156,16 @@ class Curhat extends \BaseModel{
 		$result = Curhat::delete();
 	}
 	
-	#file
-	public static function uploadCurhatImage($file){
-		$url = $_POST['baseUrl'];
-		$destination = $url.'/img/curhat/';
-		File::uploadImage($_FILES['image'], $destination);
+	#append
+	public static function appendQuery($result){
+		$response['images'] = null;
+		$getCurhatAttachment = CurhatAttachment::getCurhatAttachments($result['id']);
+		if($getCurhatAttachment['status'] == SUCCESS){
+			$response['images'] = $getCurhatAttachment['results'];
+		}
+		return $response;
 	}
+	
+	
 	
 }

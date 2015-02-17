@@ -1,0 +1,5435 @@
+{
+	"id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+	"name": "API 1.1",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "d8cbe575-d1ea-6dac-61a8-045c2266ad07",
+			"name": "Book Menu",
+			"description": "",
+			"order": [
+				"4c78db2a-bd15-3951-fad3-886ef845b12e",
+				"5b5de9de-4a86-e9eb-d97a-0ec6b8e92e2e",
+				"a66d92f4-0aa1-bf9c-fff4-e78e996e40f8"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "e742f966-0a20-fbaa-843c-04e71166e304",
+			"name": "Card Comment",
+			"description": "",
+			"order": [
+				"55c4f958-fa41-1f26-9d2d-11bc080f3ba1",
+				"adc2e945-b697-5141-038a-b3f24daee31a",
+				"198ddf0d-260c-fcbd-3938-7cb01ea43ae8",
+				"da4bbfa4-5601-12d0-e8cb-8729d671bd80",
+				"b80145bc-c38a-70bb-ca60-6dcef57b3f38",
+				"255d3289-2f54-48eb-db3d-11712ff24d8f",
+				"c74315cb-c67a-104d-bf84-318fa5951e46",
+				"894abfe0-fa27-cf46-3945-0ff0a9e8bd59"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "a733b818-97b6-294a-5557-827a5e052746",
+			"name": "Card",
+			"description": "",
+			"order": [
+				"67213ba3-ea84-88a4-8387-6d4049ec94e2",
+				"25164ad6-bf6d-d82a-c349-79ee6ba19100",
+				"ffc31e39-89e9-e8b6-cd69-34ab9b118720",
+				"22c9f68d-901f-797d-db8c-25ebc8423994",
+				"81b41a1a-3e04-a2cb-0d35-e17901874405",
+				"f58c1d42-a879-6d01-c35a-197ed1364691",
+				"e84a9c79-199d-6b1e-ef82-ec1f5386119c",
+				"4f2280c9-a139-0981-8dd5-d35b7a062134",
+				"f307214c-f58f-bd77-0f8e-7ba2cab8fa30",
+				"6c93232d-ed53-fb41-7ccc-235a7de68801",
+				"2386e362-6009-21cf-5336-8ae3ac36612f",
+				"5681c43c-16da-5551-d110-bed9b983d4d9",
+				"dce6a557-048e-49e8-5a2d-baa86acc3f57",
+				"1941c64b-f675-0c9e-de96-f45aca293caa"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "57242dd8-5f24-156c-2c73-c28c9770a7ae",
+			"name": "Coupon Claim X",
+			"description": "",
+			"order": [
+				"f527e387-eb81-4251-d95b-aaf8cc9230fd",
+				"f3e7892f-47d0-0c10-1616-7bb389fb0798",
+				"2f118e8f-ba4e-614d-6d1f-0ce01f4d3ac4",
+				"aa00a00e-b6b4-52d4-6145-153d123c92a8",
+				"a8fe8aa0-15be-15a5-fc95-0d7d0dca434d",
+				"df05f6a8-4bd6-5adc-8681-d736aaf63d37",
+				"a282b253-c3c2-2c3a-0e8f-39846b13e73c"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "d875b85f-7159-d521-081b-caa863eafa2b",
+			"name": "Coupon",
+			"description": "",
+			"order": [
+				"d326d126-0445-fb76-02e6-294338323473",
+				"d43eac1d-7d2a-42e7-8d6d-e3f432e23531",
+				"ccc12af5-72ec-0b66-bbb1-383eb5d379a1",
+				"efb399bc-a711-2f4e-bd23-6c73314fb62c",
+				"04dc53e2-d872-440f-93fe-1ddd6bad9a8d",
+				"486b5056-5ec7-30cd-731a-e0759f6c9a81",
+				"7e5454e8-a721-922d-0ca6-fda8b82ed227",
+				"087b731d-66cb-cce5-c4ad-08b42b74663d"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "e1c57526-2c59-9d63-23e0-e3c2248222c3",
+			"name": "Deal",
+			"description": "",
+			"order": [
+				"1747908a-10c7-b4b4-68e1-56a32601c589",
+				"e56c0a4c-3ac4-a323-95a5-a401951ae294",
+				"8eea9d73-40bb-1dab-9349-4787ce87bbaf",
+				"947d1369-a330-2a99-c079-88b952c39702",
+				"00496c45-2939-8bc9-c1a7-d840e63eabc9",
+				"f7e83869-3752-40c1-a826-b62449babc08",
+				"afbbc34b-9c92-6876-51c7-aa3f77913524",
+				"6f614589-76f7-a7fa-1ce5-a49b63c9bc0e",
+				"f08d775d-484f-7037-da00-b949b071657a",
+				"1eb5e4a2-920e-d4ea-a0ba-267f70cabd63",
+				"80f0248d-660f-fe80-7713-a22e64860232",
+				"54db62af-588a-e272-9157-7baee0c03486"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "37f3c072-98cb-6793-2e4d-030e17370db1",
+			"name": "Discussion",
+			"description": "",
+			"order": [
+				"141e1b86-9d62-d7ce-12ef-b1bb3a22a670",
+				"af32713a-2dd3-0185-832c-e818bdaa4420",
+				"070aab69-13bf-a42a-df6b-8250ce9b6a10",
+				"c2d93cdc-49b0-cca8-3833-a963b32ed5a8",
+				"164de25a-c051-94cd-724c-8c4986879144",
+				"dd7f33b3-7995-72df-8165-2a4c3ee0feab",
+				"cc21c0d2-867c-8ebf-34de-c1ebb5c88ed9",
+				"b8bc4774-7276-2ca2-f74c-d43d9b106c3d",
+				"e6ff4b4b-94d3-fdf1-38cf-363d87f43e93",
+				"41012828-6148-df7a-9e59-ed08342ec985"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "19e57eef-68c7-07cb-5e22-1b0e3c8d13f8",
+			"name": "Location",
+			"description": "",
+			"order": [
+				"208f046f-8023-437f-efd9-230a4faa5f2f"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "2128ce35-de53-7bf1-0b4e-0d1d0624534c",
+			"name": "Menu",
+			"description": "",
+			"order": [
+				"8acf2557-6dab-0534-8348-b7bb9f75118f",
+				"ff47a49d-31aa-2550-6129-39f09f0742ce",
+				"3eda6bb1-f697-6e3d-f4de-78da84e09a92",
+				"197d89a8-c7c3-ec44-9976-21967ea063fd",
+				"47056416-1a23-b82b-bc94-b36d6be17948",
+				"fc07a7b5-04da-7b5d-8a97-869c6bc03948",
+				"5bd65ccb-8f86-a5a5-ae89-4f18d0c2fd8f",
+				"cd080281-f30c-6c3e-7942-5e3021ffb4e2"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "ff3daeb2-d69c-c5d1-2707-f1cf1350c4bc",
+			"name": "Report",
+			"description": "",
+			"order": [
+				"89055e34-43e8-2d2c-649b-2853688023be"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "be20fdeb-980d-7eb9-7d7e-a213d130c060",
+			"name": "Restaurant",
+			"description": "",
+			"order": [
+				"0fd65f2c-4816-84df-4598-aba4988b8986",
+				"a8298054-4a5b-f868-4124-19cfc2de767d",
+				"28d5b924-2e06-4de5-139a-3912a3492d92",
+				"757653a9-b2c9-947c-d8d5-651b08b036e1",
+				"a1d0395a-de38-cb35-f00a-f272be1fe658",
+				"34adffda-7649-57ff-319a-99e351d7ce5f",
+				"a238388b-26e6-96ea-1f82-28562b5fd33e",
+				"e599b01d-0601-be7c-92a8-5ec46d288e94",
+				"2218cdf5-0656-7a03-11e7-fb8c2909518c",
+				"17097547-2753-0c26-2f5d-c0a069d41b09",
+				"92e0ea0e-ba41-dae3-18f1-8759feada049",
+				"e45abc53-a01e-31e0-3285-154d7b434f53",
+				"35d1714f-e6f0-3087-148b-6333c10ddc95",
+				"8824a91d-44f2-6cd9-8072-678bec7bd479"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "84f01536-2887-d211-5abd-072fdb1ccb9c",
+			"name": "Review",
+			"description": "",
+			"order": [
+				"7fe11f68-e210-20d1-a539-72bfa1705b6e",
+				"acc0e09d-d6a7-e4e7-0860-0c33c6a9286f",
+				"ea2102d3-d83b-4c24-11ee-e269edc8cfe8",
+				"80b7a335-adf8-e079-cd5a-03b06ef228b9",
+				"41a607bb-dd29-2db0-5d5a-61d7cd7eea05",
+				"c83d030d-fac2-d25b-3765-3aecd6de0c8b",
+				"07741818-cb2c-3663-4929-26b363397263",
+				"2f2d65a9-7130-4f88-fa17-39e329be9322",
+				"b5e45ebd-8354-293e-f71c-711b9d21d00a",
+				"c6e1e846-a3f9-711c-cd54-385d5f7de914"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "25731b4d-bd9e-b27a-ab18-addbccaf47c8",
+			"name": "Tag",
+			"description": "",
+			"order": [
+				"e3dadf9d-8504-c0dd-83d3-adb946da7f0a"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"name": "User copy",
+			"description": "",
+			"order": [
+				"27ff1a03-0a4b-f562-3ef0-eea2e6ec030e",
+				"638c0eff-46f5-7f66-b559-654af3b0f17d",
+				"34c06cf0-7da3-ac02-976c-c7bad794508a",
+				"929b76c2-3bb1-2cba-2458-ba1e36e3dabe",
+				"00bd3b64-dd2c-213e-797d-6adbed86d0f9",
+				"22567e72-8a6e-b20d-35ab-02766178b23d",
+				"5f06a99d-e99a-aad5-e5ca-27cbda7213ee",
+				"e05ddb71-6e47-08e1-7505-a897db13828b",
+				"55ffd17c-02f0-1cc2-682b-8c638132561b",
+				"85256b96-6315-6e9f-1d94-4c079d25b8d0",
+				"749baf72-af10-c924-75a1-c884611465c2",
+				"e011094c-044d-e9a5-8414-78df0e282671",
+				"6e73f1fd-4718-5ee3-eb19-f4d8857dcd12",
+				"2e752cb1-a6d6-403f-02f8-283df907f613",
+				"32ac119b-008b-4292-86e2-d36c85836a74",
+				"9a93ba73-b9f0-b86b-b321-30ea31d46e8d",
+				"1c4bc8a4-1640-46b3-5909-cb519b4cba97"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "96e485bf-d071-771b-d859-c9eec18009cd",
+			"name": "User",
+			"description": "",
+			"order": [
+				"8192bad4-ba74-060b-8b28-d3d70c437574",
+				"6c58c8b7-6670-db58-6bfe-177c1cfeef9a",
+				"711fb2cb-2b75-1c2f-c2ed-9ea8ec01df9d",
+				"771c0ab7-f18d-a469-ae22-96b99ba62dec",
+				"7f60e4ff-a122-bbbb-2bc8-43205b5540ec",
+				"12892caf-7c7a-0caf-7a04-5b0d3cf24f15",
+				"bb27276b-6577-2dfa-3956-339a57f2042e",
+				"5d8aefee-45ff-0f94-3cda-c5f51e03edc0",
+				"856df1ec-439f-fbb3-16ad-d8bb022d8a7b",
+				"45736720-067d-3d1e-7c2d-991785568a45",
+				"ac522f9f-544b-cab2-42f2-b4365520535f",
+				"b16c4a6e-e726-3426-8cd9-9bc34128f396",
+				"d2848f7d-440f-1ab1-470b-ff9c31ea16ef",
+				"63677cf4-202b-4022-c3da-bd7b1f36024b",
+				"07bfa9e6-e6f5-6a03-9ed4-54426c0e5932",
+				"856ced9f-b906-65f3-7351-ceda9d65784e",
+				"7bc4fffa-7b78-23fc-8040-a566191c9f89",
+				"fddc6d79-65d5-1da4-b07c-c56f603fcb63",
+				"b41fd962-be5a-52b6-0609-df793d87ff76",
+				"a5d51713-3170-d1df-6c47-f26ba5bbec72",
+				"07bbe21a-e401-ea6b-bf1d-b659fc023d99",
+				"a2d7799f-5ba6-e5cf-95fc-f88f0100a64e",
+				"0c3d9f4a-e473-a0fc-232e-435102808545",
+				"f6dddcd2-2e66-1c38-4628-b50654d56a2e"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		},
+		{
+			"id": "4a9037d5-4f7f-67b0-2fda-b483c7fa4e0e",
+			"name": "image",
+			"description": "",
+			"order": [
+				"beabb8a9-0c32-b06f-a675-b686812f2eb3",
+				"ded9a7a5-86a7-8505-ef70-ee86cd88db09",
+				"f6f74626-6342-fd91-669d-b33051ccc442",
+				"fd942b60-5614-35ac-222c-35a3914aa1fe",
+				"08e1dc7e-8037-1351-ec71-f3338d3f41ae",
+				"083b8b82-ec8d-e352-2206-cda88e2410fb",
+				"e1076d2e-5f2c-621d-5286-8a219483c126"
+			],
+			"collection_name": "API 1.1",
+			"collection_id": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946"
+		}
+	],
+	"timestamp": 1420124614297,
+	"synced": false,
+	"remoteLink": "https://www.getpostman.com/collections/f22fb85163e60bcd48b3",
+	"requests": [
+		{
+			"id": "00496c45-2939-8bc9-c1a7-d840e63eabc9",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/vendor/1/deal",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421840424641,
+			"name": "Get Vendor Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "00bd3b64-dd2c-213e-797d-6adbed86d0f9",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/pin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421658713120,
+			"name": "Get User Pin",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "04dc53e2-d872-440f-93fe-1ddd6bad9a8d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/coupon/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422010080992,
+			"name": "Get Restaurant Vendor Coupon",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "070aab69-13bf-a42a-df6b-8250ce9b6a10",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/discussion/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421813640322,
+			"name": "Get Restaurant Trending Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "07741818-cb2c-3663-4929-26b363397263",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review/create",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654616060,
+			"name": "Create Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "07bbe21a-e401-ea6b-bf1d-b659fc023d99",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/forgot-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420397491125,
+			"name": "Forgot Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"username\":\"febri\"\n}"
+		},
+		{
+			"id": "07bfa9e6-e6f5-6a03-9ed4-54426c0e5932",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/update-last-seen",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422531631699,
+			"name": "Update User Last Seen",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "083b8b82-ec8d-e352-2206-cda88e2410fb",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/image/create?seo-url=skye-menara-bca",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "bruschetta-italy-halloween-food.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422002034124,
+			"name": "Create Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "087b731d-66cb-cce5-c4ad-08b42b74663d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon/15",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422011406432,
+			"name": "Destroy Coupon",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": ""
+		},
+		{
+			"id": "08e1dc7e-8037-1351-ec71-f3338d3f41ae",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/image/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420798410893,
+			"name": "Get Restaurant User Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "0c3d9f4a-e473-a0fc-232e-435102808545",
+			"headers": "",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422630037696,
+			"name": "Update User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "0fd65f2c-4816-84df-4598-aba4988b8986",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420297531661,
+			"name": "Index Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "12892caf-7c7a-0caf-7a04-5b0d3cf24f15",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/pin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421658713120,
+			"name": "Get User Pin",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "141e1b86-9d62-d7ce-12ef-b1bb3a22a670",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/discussion",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "booo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420406472542,
+			"name": "Index Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "164de25a-c051-94cd-724c-8c4986879144",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/discussion",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421815906243,
+			"name": "Get User Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "17097547-2753-0c26-2f5d-c0a069d41b09",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/unbookmark",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420412741884,
+			"name": "Unbookmark Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "1747908a-10c7-b4b4-68e1-56a32601c589",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/deal",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy tag a",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "dummy tag f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "menu_id",
+					"value": "38",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421839926663,
+			"name": "Index",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "1941c64b-f675-0c9e-de96-f45aca293caa",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/146",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420237077131,
+			"name": "Destroy",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "197d89a8-c7c3-ec44-9976-21967ea063fd",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/menu/38/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420388482461,
+			"name": "Like Menu",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "198ddf0d-260c-fcbd-3938-7cb01ea43ae8",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/1/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420704452531,
+			"name": "Like",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "1c4bc8a4-1640-46b3-5909-cb519b4cba97",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/user/update-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420800872290,
+			"name": "Change Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false,
+			"rawModeData": "{\n  \"old_password_confirmation\":\"febri123\",\n  \"password\":\"febri123\",\n  \"password_confirmation\":\"febri123\"\n}"
+		},
+		{
+			"id": "1eb5e4a2-920e-d4ea-a0ba-267f70cabd63",
+			"headers": "username: febri\nContent-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/recommend",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422291178717,
+			"name": "Recomend Deals",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n      \"ids\":[\"1\", \"5\", \"6\"]\n}"
+		},
+		{
+			"id": "208f046f-8023-437f-efd9-230a4faa5f2f",
+			"headers": "",
+			"url": "{{api.1.1}}/location/auto-complete/ja",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420388918371,
+			"name": "Get Auto Complete",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "2218cdf5-0656-7a03-11e7-fb8c2909518c",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/bookmark",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420412703784,
+			"name": "Bookmark Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "22567e72-8a6e-b20d-35ab-02766178b23d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/visit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421817922875,
+			"name": "Get User Recent Visit",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "22c9f68d-901f-797d-db8c-25ebc8423994",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/card",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420789916046,
+			"name": "Get Restaurant Card",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "2386e362-6009-21cf-5336-8ae3ac36612f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/186/unlike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420296136945,
+			"name": "Unlike",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "25164ad6-bf6d-d82a-c349-79ee6ba19100",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421647597714,
+			"name": "Get Trending Cards",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "255d3289-2f54-48eb-db3d-11712ff24d8f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/210/comment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421213968365,
+			"name": "Store",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"description\":\"some dummy description\"\n}"
+		},
+		{
+			"id": "27ff1a03-0a4b-f562-3ef0-eea2e6ec030e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420392890943,
+			"name": "Index User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "28d5b924-2e06-4de5-139a-3912a3492d92",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421827810454,
+			"name": "Get Trending Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "2e752cb1-a6d6-403f-02f8-283df907f613",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/forgot-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420397491125,
+			"name": "Forgot Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"username\":\"febri\"\n}",
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "2f118e8f-ba4e-614d-6d1f-0ce01f4d3ac4",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/coupon-claim",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841158097,
+			"name": "Get Restaurant Coupon Claim",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "2f2d65a9-7130-4f88-fa17-39e329be9322",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654607319,
+			"name": "Edit Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "32ac119b-008b-4292-86e2-d36c85836a74",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/user/reset-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420397566291,
+			"name": "Reset Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\t\"key\":\"eyJpdiI6InJobGdxSXphMG9XUWhXUFliRk9kNmc9PSIsInZhbHVlIjoia2ZYWG9aaVA1elZzb0Z5ckZpc05sdz09IiwibWFjIjoiMmNjOGY2NTllMzRmNWM1ZjYyNDEyNDA0OTIyYTgzOGQxZmYzZTk5NzdhNzYyOTBkZWVkZDE2NzhhMzBhZTBhZCJ9\",\n  \"password\" : \"febri123\",\n  \"password_confirmation\" : \"febri123\"\n}",
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "34adffda-7649-57ff-319a-99e351d7ce5f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420297706578,
+			"name": "Edit Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "34c06cf0-7da3-ac02-976c-c7bad794508a",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/follower",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421644440142,
+			"name": "Get User Follower",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "35d1714f-e6f0-3087-148b-6333c10ddc95",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420435350997,
+			"name": "Update Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n\t\"city_string\":\"jakarta\",\n\t\"location_string\":\"puri indah\",\n\t\"address\":\"sesuatu daerah\",\n\t\"price_range_id\":\"1\",\n\t\"name\":\"resto lalalla\",\n    \"business_day_ids\":[\"1\",\"5\",\"3\"],\n    \"open_business_hour_ids\":[\"1\",\"6\",\"3\"],\n    \"close_business_hour_ids\":[\"1\",\"7\",\"3\"],\n    \"facility_ids\":[\"1\",\"2\"],\n    \"category_ids\":[\"1\",\"2\"]\n}"
+		},
+		{
+			"id": "3eda6bb1-f697-6e3d-f4de-78da84e09a92",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/menu/45/user-likes",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421657303723,
+			"name": "Get User Like copy",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "41012828-6148-df7a-9e59-ed08342ec985",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/discussion/259",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421147162792,
+			"name": "Update Disscussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"title\":\"new dummy title\",\n    \"description\":\"new dummy description\",\n\t\"tag_names\":[\"dummy tag c\", \"dummy tag d\", \"dummy tag e\"]\n}"
+		},
+		{
+			"id": "41a607bb-dd29-2db0-5d5a-61d7cd7eea05",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/review",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421816051943,
+			"name": "Get User Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "45736720-067d-3d1e-7c2d-991785568a45",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420528640949,
+			"name": "Show User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "47056416-1a23-b82b-bc94-b36d6be17948",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/menu/38/unlike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420387339137,
+			"name": "Unlike Menu",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "486b5056-5ec7-30cd-731a-e0759f6c9a81",
+			"headers": "username: febri\n",
+			"url": "{{api.1.1}}/coupon",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "bruschetta-italy-halloween-food.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422010741693,
+			"name": "Store Coupon",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "4c78db2a-bd15-3951-fad3-886ef845b12e",
+			"headers": "",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/book-menu",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422005900408,
+			"name": "Get Restaurant Book Menus",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "4f2280c9-a139-0981-8dd5-d35b7a062134",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/210/user-likes",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421216573227,
+			"name": "Get User Like",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "54db62af-588a-e272-9157-7baee0c03486",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/8",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421999891076,
+			"name": "Destroy Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": ""
+		},
+		{
+			"id": "55c4f958-fa41-1f26-9d2d-11bc080f3ba1",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/210/comment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "FNM_120112-Roasted-Carrots-and-Peas-Recipe_s4x3_lg.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy tag a",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "dummy tag f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "menu_id",
+					"value": "38",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421238320529,
+			"name": "Get Card Comments",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "55ffd17c-02f0-1cc2-682b-8c638132561b",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/user/fardan/follow",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421641395443,
+			"name": "follow user",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "5681c43c-16da-5551-d110-bed9b983d4d9",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card/186/pin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420411505783,
+			"name": "Pin",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5b5de9de-4a86-e9eb-d97a-0ec6b8e92e2e",
+			"headers": "",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/book-menu",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some dummy description",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422007383129,
+			"name": "Store Book Menu",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5bd65ccb-8f86-a5a5-ae89-4f18d0c2fd8f",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/menu/store-menus",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421663520116,
+			"name": "Store Multiple Menus",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"names\":[\"ayam a\", \"ayam b\", \"ayam c\"],\n    \"prices\":[\"10000\", \"20000\"]\n}"
+		},
+		{
+			"id": "5d8aefee-45ff-0f94-3cda-c5f51e03edc0",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/feed",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422514913610,
+			"name": "Get User Feed",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5f06a99d-e99a-aad5-e5ca-27cbda7213ee",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420528640949,
+			"name": "Show User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "63677cf4-202b-4022-c3da-bd7b1f36024b",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/log-out",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422530122970,
+			"name": "Log Out",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "638c0eff-46f5-7f66-b559-654af3b0f17d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/bookmark",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421660575535,
+			"name": "Get User Bookmark",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "67213ba3-ea84-88a4-8387-6d4049ec94e2",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420517394446,
+			"name": "Index Card",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "6c58c8b7-6670-db58-6bfe-177c1cfeef9a",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422521962242,
+			"name": "Get Trending User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "6c93232d-ed53-fb41-7ccc-235a7de68801",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card/186/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420296129649,
+			"name": "Like",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "6e73f1fd-4718-5ee3-eb19-f4d8857dcd12",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420395618833,
+			"name": "Store User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"name\":\"test\",\n  \"username\":\"test\",\n  \"email\":\"test@gmail.com\",\n  \"password\":\"test123\",\n  \"password_confirmation\":\"test123\"\n}",
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "6f614589-76f7-a7fa-1ce5-a49b63c9bc0e",
+			"headers": "username: febri\n",
+			"url": "{{api.1.1}}/restaurant/rm-sakato-kebon-jeruk/deal",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_recommended",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422290745138,
+			"name": "Store Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "711fb2cb-2b75-1c2f-c2ed-9ea8ec01df9d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/bookmark",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421660575535,
+			"name": "Get User Bookmark",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "749baf72-af10-c924-75a1-c884611465c2",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/log-out",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420392966143,
+			"name": "Log Out",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "757653a9-b2c9-947c-d8d5-651b08b036e1",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654660962,
+			"name": "Show Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "771c0ab7-f18d-a469-ae22-96b99ba62dec",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/follower",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421644440142,
+			"name": "Get User Follower",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "7bc4fffa-7b78-23fc-8040-a566191c9f89",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/update-all-user-point",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422549256757,
+			"name": "Update all users point",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "7e5454e8-a721-922d-0ca6-fda8b82ed227",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841931573,
+			"name": "Update Coupon X",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "7f60e4ff-a122-bbbb-2bc8-43205b5540ec",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/following",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421644442553,
+			"name": "Get User Following",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "7fe11f68-e210-20d1-a539-72bfa1705b6e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/review",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "booo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420406279094,
+			"name": "Index Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "80b7a335-adf8-e079-cd5a-03b06ef228b9",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654628859,
+			"name": "Get Restaurant Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "80f0248d-660f-fe80-7713-a22e64860232",
+			"headers": "username: febri\nContent-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/unrecommend",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422291263624,
+			"name": "Unrecommend Deals",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n      \"ids\":[\"1\", \"5\", \"6\"]\n}"
+		},
+		{
+			"id": "8192bad4-ba74-060b-8b28-d3d70c437574",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420392890943,
+			"name": "Index User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "81b41a1a-3e04-a2cb-0d35-e17901874405",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/card",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421815815785,
+			"name": "Get User Card",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "85256b96-6315-6e9f-1d94-4c079d25b8d0",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/user/fardan/unfollow",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421641400075,
+			"name": "unfollow user",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "856ced9f-b906-65f3-7351-ceda9d65784e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/update-user-point",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422549253071,
+			"name": "Update user point",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "856df1ec-439f-fbb3-16ad-d8bb022d8a7b",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/visit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421817922875,
+			"name": "Get User Recent Visit",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8824a91d-44f2-6cd9-8072-678bec7bd479",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/update-image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421212197407,
+			"name": "Update Restaurant Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n\t\"card_id\":\"251\"\n}"
+		},
+		{
+			"id": "89055e34-43e8-2d2c-649b-2853688023be",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/report",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420398390262,
+			"name": "Store Report",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"description\":\"some dummy report\",\n  \"card_id\":\"1\"\n}"
+		},
+		{
+			"id": "894abfe0-fa27-cf46-3945-0ff0a9e8bd59",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420705445042,
+			"name": "Destroy",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8acf2557-6dab-0534-8348-b7bb9f75118f",
+			"headers": "",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/menu",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420693753851,
+			"name": "Get Restaurant Menus",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8eea9d73-40bb-1dab-9349-4787ce87bbaf",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/recommended",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422289605774,
+			"name": "Get Recommended Deals",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "929b76c2-3bb1-2cba-2458-ba1e36e3dabe",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/following",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421644442553,
+			"name": "Get User Following",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014",
+			"synced": false
+		},
+		{
+			"id": "92e0ea0e-ba41-dae3-18f1-8759feada049",
+			"headers": "",
+			"url": "{{api.1.1}}/restaurant/auto-complete/a",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420439451370,
+			"name": "Get Auto Complete copy",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "947d1369-a330-2a99-c079-88b952c39702",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/deal",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy tag a",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "dummy tag f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "menu_id",
+					"value": "38",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421839907487,
+			"name": "Get Restaurant Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "9a93ba73-b9f0-b86b-b321-30ea31d46e8d",
+			"headers": "username: febri\n",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "55c746ea54b0dbf0104ef246e8c46854.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420533737064,
+			"name": "Update User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "a1d0395a-de38-cb35-f00a-f272be1fe658",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/create",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420297691773,
+			"name": "Create Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a238388b-26e6-96ea-1f82-28562b5fd33e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420412313706,
+			"name": "Like Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a282b253-c3c2-2c3a-0e8f-39846b13e73c",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon-claim/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841330553,
+			"name": "Update Coupon Claim",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a2d7799f-5ba6-e5cf-95fc-f88f0100a64e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/reset-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422630025500,
+			"name": "Reset Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\t\"key\":\"eyJpdiI6InJobGdxSXphMG9XUWhXUFliRk9kNmc9PSIsInZhbHVlIjoia2ZYWG9aaVA1elZzb0Z5ckZpc05sdz09IiwibWFjIjoiMmNjOGY2NTllMzRmNWM1ZjYyNDEyNDA0OTIyYTgzOGQxZmYzZTk5NzdhNzYyOTBkZWVkZDE2NzhhMzBhZTBhZCJ9\",\n  \"password\" : \"febri123\",\n  \"password_confirmation\" : \"febri123\"\n}"
+		},
+		{
+			"id": "a5d51713-3170-d1df-6c47-f26ba5bbec72",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423653574091,
+			"name": "Store User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"name\":\"febriansyah\",\n  \"username\":\"febri\",\n  \"email\":\"febri@gmail.com\",\n  \"password\":\"febri123\",\n  \"password_confirmation\":\"febri123\"\n}"
+		},
+		{
+			"id": "a66d92f4-0aa1-bf9c-fff4-e78e996e40f8",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/book-menu/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422005950418,
+			"name": "Destroy Book Menu",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a8298054-4a5b-f868-4124-19cfc2de767d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/newest",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "Arroz-frito-al-estilo-japonés.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "2015",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "menu_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423749722893,
+			"name": "Newest Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a8fe8aa0-15be-15a5-fc95-0d7d0dca434d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/coupon-claim/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841267923,
+			"name": "Get Restaruant User Coupon Claim",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "aa00a00e-b6b4-52d4-6145-153d123c92a8",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/coupon-claim",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841158097,
+			"name": "Get User Coupon Claim",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ac522f9f-544b-cab2-42f2-b4365520535f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420393084964,
+			"name": "Edit User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "acc0e09d-d6a7-e4e7-0860-0c33c6a9286f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/review/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422287424518,
+			"name": "Get Trending Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "adc2e945-b697-5141-038a-b3f24daee31a",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/1/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420706088215,
+			"name": "Edit",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "af32713a-2dd3-0185-832c-e818bdaa4420",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/discussion/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421655618129,
+			"name": "Get Trending Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "afbbc34b-9c92-6876-51c7-aa3f77913524",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/deal/create",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421986967922,
+			"name": "Create Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b16c4a6e-e726-3426-8cd9-9bc34128f396",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/fardan/follow",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422630059975,
+			"name": "follow user",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b41fd962-be5a-52b6-0609-df793d87ff76",
+			"headers": "Content-Type: application/json\nAuthorization: Basic ZmVicmk6ZmVicmkxMjNh\n",
+			"url": "{{api.1.1}}/user/log-in",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"username": "febri",
+				"password": "febri123",
+				"id": "basic",
+				"timestamp": 1420294575998
+			},
+			"time": 1420529687679,
+			"name": "Log In",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": ""
+		},
+		{
+			"id": "b5e45ebd-8354-293e-f71c-711b9d21d00a",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423653500239,
+			"name": "Store Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"latitude\":\"1\",\n    \"longitude\":\"1\",\n    \"overall_rating\":\"1\",\n    \"taste_rating\":\"1\",\n    \"presentation_rating\":\"1\",\n    \"service_rating\":\"1\",\n    \"atmosphere_rating\":\"1\",\n    \"description\":\"dummy description\",\n\t\"menu_names\":[\"nasi goreng\", \"jus jeruk\"],\n\t\"tag_names\":[\"dummy\", \"2015\"]\n}"
+		},
+		{
+			"id": "b80145bc-c38a-70bb-ca60-6dcef57b3f38",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/8/user-likes",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421216128392,
+			"name": "Get User Like",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b8bc4774-7276-2ca2-f74c-d43d9b106c3d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/discussion/211/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "booo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420408355491,
+			"name": "Edit Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "bb27276b-6577-2dfa-3956-339a57f2042e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/user-point",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422552105680,
+			"name": "Get User Point",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "beabb8a9-0c32-b06f-a675-b686812f2eb3",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/image/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421655860485,
+			"name": "Get Trending Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "c2d93cdc-49b0-cca8-3833-a963b32ed5a8",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/discussion",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "booo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420406973846,
+			"name": "Get Restaurant Disscussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "c6e1e846-a3f9-711c-cd54-385d5f7de914",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654590763,
+			"name": "Update Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"latitude\":\"1\",\n    \"longitude\":\"2\",\n    \"overall_rating\":\"1\",\n    \"taste_rating\":\"0\",\n    \"presentation_rating\":\"0\",\n    \"service_rating\":\"1\",\n    \"atmosphere_rating\":\"2\",\n    \"description\":\"new dummy description\",\n\t\"menu_names\":[\"new dummy food a\", \"\"],\n\t\"tag_names\":[\"dummy tag a\", \"dummy tag b\", \"\"]\n}"
+		},
+		{
+			"id": "c74315cb-c67a-104d-bf84-318fa5951e46",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420705116293,
+			"name": "Update",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"description\":\"some new dummy description\"\n}"
+		},
+		{
+			"id": "c83d030d-fac2-d25b-3765-3aecd6de0c8b",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654620111,
+			"name": "Get Restaurant User Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "cc21c0d2-867c-8ebf-34de-c1ebb5c88ed9",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/discussion/create?seo-url=skye-menara-bca",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "bruschetta-italy-halloween-food.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422002094836,
+			"name": "Create Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ccc12af5-72ec-0b66-bbb1-383eb5d379a1",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/coupon",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421840630434,
+			"name": "Get Restaurant Coupon",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "cd080281-f30c-6c3e-7942-5e3021ffb4e2",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/menu/40",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420390820837,
+			"name": "Destroy copy",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "d2848f7d-440f-1ab1-470b-ff9c31ea16ef",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/fardan/unfollow",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "febria",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422630057179,
+			"name": "unfollow user",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "d326d126-0445-fb76-02e6-294338323473",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421840615129,
+			"name": "Index",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "d43eac1d-7d2a-42e7-8d6d-e3f432e23531",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421840621435,
+			"name": "Show",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "da4bbfa4-5601-12d0-e8cb-8729d671bd80",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card-comment/1/unlike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420704732787,
+			"name": "Unlike",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "dce6a557-048e-49e8-5a2d-baa86acc3f57",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/card/186/unpin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420411623844,
+			"name": "Unpin",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "dd7f33b3-7995-72df-8165-2a4c3ee0feab",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/discussion/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "booo",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420407027925,
+			"name": "Get Restaurant User Discussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ded9a7a5-86a7-8505-ef70-ee86cd88db09",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/image/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421813884181,
+			"name": "Get Restaurant Trending Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "df05f6a8-4bd6-5adc-8681-d736aaf63d37",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon/1/claim",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "some dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "some description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-31 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841315568,
+			"name": "Store Coupon Claim",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e011094c-044d-e9a5-8414-78df0e282671",
+			"headers": "Content-Type: application/json\nAuthorization: Basic ZmVicmk6ZmVicmkxMjNh\n",
+			"url": "{{api.1.1}}/user/log-in",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"username": "febri",
+				"password": "febri123",
+				"id": "basic",
+				"timestamp": 1420294575998
+			},
+			"time": 1420529687679,
+			"name": "Login User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "",
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "e05ddb71-6e47-08e1-7505-a897db13828b",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/edit",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420393084964,
+			"name": "Edit User",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"folderId": "1eb33a8c-789a-fe47-cdaf-81261aeab014"
+		},
+		{
+			"id": "e1076d2e-5f2c-621d-5286-8a219483c126",
+			"headers": "username: febri\n",
+			"url": "{{api.1.1}}/image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "chinese1.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "2015",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423748837799,
+			"name": "Store Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e3dadf9d-8504-c0dd-83d3-adb946da7f0a",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/tag/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421647314559,
+			"name": "Get Trending Tags",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e45abc53-a01e-31e0-3285-154d7b434f53",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421053912278,
+			"name": "Store Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n\t\"city_string\":\"jakarta\",\n\t\"location_string\":\"puri indah\",\n\t\"address\":\"sesuatu daerah\",\n\t\"price_range_id\":\"1\",\n\t\"name\":\"resto lalalla\",\n    \"business_day_ids\":[\"1\",\"5\",\"3\"],\n    \"open_business_hour_ids\":[\"1\",\"6\",\"3\"],\n    \"close_business_hour_ids\":[\"1\",\"7\",\"3\"],\n    \"facility_ids\":[\"1\",\"2\"],\n    \"category_ids\":[\"1\",\"2\"]\n}"
+		},
+		{
+			"id": "e56c0a4c-3ac4-a323-95a5-a401951ae294",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[0]",
+					"value": "dummy tag a",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_names[1]",
+					"value": "dummy tag f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "menu_id",
+					"value": "38",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421839958197,
+			"name": "Show",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e599b01d-0601-be7c-92a8-5ec46d288e94",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/unlike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "city_string",
+					"value": "Jakarta",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "aw' aw   &         aw",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "sesuatu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price_range_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location_string",
+					"value": "Puri Indah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "business_hour_day_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "open_business_hour_time_ids[0]",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "close_business_hour_time_ids[0]",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "facility_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[0]",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_ids[1]",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420412557479,
+			"name": "Unlike Restaurant",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e6ff4b4b-94d3-fdf1-38cf-363d87f43e93",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/discussion",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421146674299,
+			"name": "Store Disscussion",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"title\":\"some dummy title\",\n    \"description\":\"some dummy description\",\n    \"restaurant_id\":\"1\",\n\t\"tag_names\":[\"dummy tag c\", \"dummy tag d\"]\n}"
+		},
+		{
+			"id": "e84a9c79-199d-6b1e-ef82-ec1f5386119c",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/tag/11/card",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421816828280,
+			"name": "Get Card by tag",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ea2102d3-d83b-4c24-11ee-e269edc8cfe8",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/review/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423654642864,
+			"name": "Get Restaruant Trending Review",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "efb399bc-a711-2f4e-bd23-6c73314fb62c",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/vendor/1/coupon",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841050027,
+			"name": "Get Vendor Coupon",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f08d775d-484f-7037-da00-b949b071657a",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/deal/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421840391057,
+			"name": "Update Deal X",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f307214c-f58f-bd77-0f8e-7ba2cab8fa30",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/card/210",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421213988194,
+			"name": "Show Card",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f3e7892f-47d0-0c10-1616-7bb389fb0798",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon-claim/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841153795,
+			"name": "Show",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f527e387-eb81-4251-d95b-aaf8cc9230fd",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/coupon-claim",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "vendor_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "restaurant_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "new dummy title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "new description title",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_at",
+					"value": "2014-12-20 23:59:59",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_at",
+					"value": "2014-12-30 23:59:59",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421841146091,
+			"name": "Index",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f58c1d42-a879-6d01-c35a-197ed1364691",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/card/febri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420789981189,
+			"name": "Get Restaurant User Card ",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f6dddcd2-2e66-1c38-4628-b50654d56a2e",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/update-password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1422630041213,
+			"name": "Change Password",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"old_password_confirmation\":\"febri123\",\n  \"password\":\"febri123\",\n  \"password_confirmation\":\"febri123\"\n}"
+		},
+		{
+			"id": "f6f74626-6342-fd91-669d-b33051ccc442",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420798418360,
+			"name": "Get Restaurant Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f7e83869-3752-40c1-a826-b62449babc08",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/deal/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421985588438,
+			"name": "Get Restaurant Vendor Deal",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "fc07a7b5-04da-7b5d-8a97-869c6bc03948",
+			"headers": "Content-Type: application/json\nusername: febri\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/menu",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421661296457,
+			"name": "Store Menu",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"name\":\"testa\",\n  \"price\":\"1000\"\n}"
+		},
+		{
+			"id": "fd942b60-5614-35ac-222c-35a3914aa1fe",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/user/febri/image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421816018374,
+			"name": "Get User Image",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "fddc6d79-65d5-1da4-b07c-c56f603fcb63",
+			"headers": "",
+			"url": "{{api.1.1}}/user/update-user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "febri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "muhammad febriansyah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "febri@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "940922_4906228295857_264114042_n.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423651794451,
+			"name": "Update User [POST CASE]",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ff47a49d-31aa-2550-6129-39f09f0742ce",
+			"headers": "",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/menu/auto-complete/a",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1420379882927,
+			"name": "Get Auto Complete",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ffc31e39-89e9-e8b6-cd69-34ab9b118720",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{api.1.1}}/restaurant/skye-menara-bca/card/trending",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1421812148342,
+			"name": "Get Restaurant Trending Cards",
+			"description": "",
+			"collectionId": "8dbfe85b-6f00-4fc9-191c-5ddb53fb8946",
+			"responses": [],
+			"synced": false
+		}
+	]
+}

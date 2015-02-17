@@ -1,9 +1,11 @@
 <?php
 class File{
 	public static function uploadImage($file, $path, $targetName = null){
-		$fileSrc = $_FILES['image']['tmp_name'];
-		$fileName = $_FILES['image']['name']; //md5($imgName.time().rand());
-		$fileType = $_FILES['image']['type'];
+		$fileName = $file['name']; //md5($imgName.time().rand());
+		$fileType = $file['type'];
+		$fileSize = $file['size'];
+		$fileSrc = $file['tmp_name'];
+		$fileError = $file['error'];
 		
 		if($fileType == "image/pjpeg" || $fileType == "image/jpeg"){	
 			$extension = '.jpg';
@@ -14,12 +16,23 @@ class File{
 		}
 		
 		if($targetName==null){
-			$targetName = md5(rand().time().'_'.$fileName).$extension;
+			$targetName = md5($fileType.$fileSize.$fileName.$fileSrc.time().rand()).$extension;
 		}
 		
 		$path = trim($path, '/');
 		$destination = $path.'/'.$targetName;
-		move_uploaded_file($fileSrc, $destination);
+		if(move_uploaded_file($fileSrc, $destination)){
+			$response['status'] = true;
+			$response['file_name'] = $fileName;
+			$response['size'] = $fileSize;
+			$response['mime'] = $fileType;
+			$response['url'] = $targetName;
+		}else{
+			$response = false;
+			$response['errors'] = $fileError;
+		};
+		
+		return $response;
 	}
 	public static function getImageThumb($path, $size){
 		list($width, $height) = getimagesize($path);
