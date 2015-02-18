@@ -116,6 +116,13 @@ class Curhat extends \BaseModel{
 		return $response;
 		// curhat by id
 	}
+	public static function getCurhatChilds($curhat_id){
+		$db = Curhat::where('parent_id', '=', $curhat_id)->get();
+		$response = Response::validateQueryResponse($db);
+		return $response;
+		// curhat by id
+	}
+	
 	
 	#create
 	public static function getCurhatOptions(){
@@ -189,6 +196,13 @@ class Curhat extends \BaseModel{
 	}
 	public static function append_detail($result){
 		$curhat_id = $result['id'];
+		
+		
+		$response['childs'] = null;
+		$getCurhatChilds = self::getCurhatChilds($curhat_id);
+		if($getCurhatChilds['status'] == SUCCESS){
+			$response['childs'] = $getCurhatChilds['results'];
+		}
 		
 		$response['images'] = null;
 		$getCurhatAttachment = CurhatAttachment::getCurhatAttachments($curhat_id);
