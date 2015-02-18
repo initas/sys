@@ -1,6 +1,8 @@
 <?php
 namespace securhat\api\v1b0;
 use model\v1b0\Curhat;
+use model\v1b0\CurhatAttachment;
+use model\v1b0\CurhatLike;
 use model\v1b0\Image;
 use model\v1b0\User;
 use \DB;
@@ -59,10 +61,9 @@ class CurhatController extends \BaseController{
 				$statuses[] = $saveImage['status'];
 				
 				if($saveImage['status']==SUCCESS){
-					Curhat::curhat_attachment()->synch(
-						$saveCurhat['result']['id'],
-						$saveImage['result']['id']
-					);
+					$curhat_id = $saveCurhat['result']['id'];
+					$image_id = $saveImage['result']['id'];
+					CurhatAttachment::synchCurhatAttachments($curhat_id, $image_id);
 				}else{
 					$response['errors'] = $saveImage['errors'];
 				}
@@ -117,6 +118,39 @@ class CurhatController extends \BaseController{
 		$user = User::getUser($username);
 		$userId = $user['result']['id'];
 		$response = Curhat::getToUserCurhats($userId);
+		return Response::json($response);
+	}
+	
+	public function like($curhat_id){
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		$curhat = Curhat::getCurhat($curhat_id);
+		$curhat_id = $curhat['result']['id'];
+		$response = CurhatLike::like($curhat_id, $user_id);
+		return Response::json($response);
+	}
+	public function unlike($curhat_id){
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		$curhat = Curhat::getCurhat($curhat_id);
+		$curhat_id = $curhat['result']['id'];
+		$response = Curhat::unlike($curhat_id, $user_id);
+		return Response::json($response);
+	}
+	public function pin($curhat_id){
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		$curhat = Curhat::getCurhat($curhat_id);
+		$curhat_id = $curhat['result']['id'];
+		$response = Curhat::pin($curhat_id, $user_id);
+		return Response::json($response);
+	}
+	public function unpin($curhat_id){
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		$curhat = Curhat::getCurhat($curhat_id);
+		$curhat_id = $curhat['result']['id'];
+		$response = Curhat::unpin($curhat_id, $user_id);
 		return Response::json($response);
 	}
 }

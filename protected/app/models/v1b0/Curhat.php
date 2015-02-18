@@ -15,6 +15,13 @@ class Curhat extends \BaseModel{
 		'user'				=> array(self::BELONGS_TO, 'model\v1b0\User'),
 		'to_user'			=> array(self::BELONGS_TO, 'model\v1b0\User'),
 		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Image', 'curhat_attachments'),
+		'curhat_like'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_likes'),
+		'curhat_pin'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_pins'),
+	);
+	
+	protected static $append = array(
+		'detail',
+		'log_on_user'
 	);
 	
 	/*
@@ -44,7 +51,7 @@ class Curhat extends \BaseModel{
 	#retrieve
 	public static function getCurhats(){
 		$db = Curhat::paginate();
-		$db = self::append($db, 'appendQuery');
+		//$db = self::append($db, array('detail', 'log_on_user'));
 		$response = Response::validateQueryResponse($db);
 		return $response;
 		// user curhat only
@@ -157,12 +164,27 @@ class Curhat extends \BaseModel{
 	}
 	
 	#append
-	public static function appendQuery($result){
+	public static function append_log_on_user($result){
+		$curhat_id = $result['id'];
+		$response['is_liked'] = CurhatLike::isLiked($curhat_id, 1);
+		$response['is_pinned'] = CurhatPin::isPinned($curhat_id, 1);
+		return $response;
+	}
+	public static function append_detail($result){
+		$curhat_id = $result['id'];
+		
 		$response['images'] = null;
-		$getCurhatAttachment = CurhatAttachment::getCurhatAttachments($result['id']);
+		$getCurhatAttachment = CurhatAttachment::getCurhatAttachments($curhat_id);
 		if($getCurhatAttachment['status'] == SUCCESS){
 			$response['images'] = $getCurhatAttachment['results'];
 		}
+		
+		$response['likes'] = null;
+		$getCurhatLikes = CurhatLike::getCurhatLikes($curhat_id);
+		if($getCurhatLikes['status'] == SUCCESS){
+			$response['likes'] = $getCurhatLikes['results'];
+		}
+		
 		return $response;
 	}
 	

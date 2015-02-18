@@ -355,14 +355,23 @@ class DB{
 			}
 		}
 		
+		if(isset(static::$append)){
+			$db = self::append($db, static::$append);
+		};
+		
 		self::refreshQuery();
 		return $db;
 	}
-	public static function append($db, $callback){
+	public static function append($db, $callbacks){
 		$results = $db->data;
+		if(!is_array($callbacks)){
+			$callbacks = array($callbacks);
+		}
 		foreach($results as $index => $result){
-			$response = call_user_func(array(get_called_class(), $callback), $result);
-			$results[$index] = array_merge($result, $response);
+			foreach($callbacks as $callback){
+				$response[$callback] = call_user_func(array(get_called_class(), 'append_'.$callback), $result);
+				$results[$index] = array_merge($result, $response);
+			}
 		}
 		$db->data = $results;
 		return $db;
