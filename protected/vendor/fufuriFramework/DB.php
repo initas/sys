@@ -388,10 +388,10 @@ class DB{
 			}
 		}
 		
+		self::refreshQuery();
 		if(isset(static::$append)){
 			$db = self::append($db, static::$append);
 		};
-		self::refreshQuery();
 		return $db;
 	}
 	public static function append($db, $callbacks){

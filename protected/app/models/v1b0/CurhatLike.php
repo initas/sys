@@ -29,7 +29,7 @@ class CurhatLike extends \BaseModel{
 		return $response;
 	}
 	public static function getCurhatLikes($curhat_id){
-		$db = CurhatLike::where('curhat_id', '=', $curhat_id)->paginate();
+		$db = User::curhat_like()->where('curhat_id', '=', $curhat_id)->get();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}

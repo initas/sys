@@ -8,6 +8,9 @@ class User extends \BaseModel{
 	|--------------------------------------------------------------------------
 	*/
 	protected static $table = 'users';
+	public static $relationsData = array(
+		'curhat_like' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_likes'),
+	);
 	
 	/*
 	|--------------------------------------------------------------------------
