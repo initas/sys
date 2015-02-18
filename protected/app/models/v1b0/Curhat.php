@@ -8,8 +8,10 @@ class Curhat extends \BaseModel{
 	|--------------------------------------------------------------------------
 	*/
 	protected static $table = 'curhats';
-	const BELONGS_TO = 1;
-	const BELONGS_TO_MANY = 2;
+	protected static $append = array(
+		'detail',
+		'log_on_user'
+	);
 	
 	public static $relationsData = array(
 		'user'				=> array(self::BELONGS_TO, 'model\v1b0\User'),
@@ -19,10 +21,6 @@ class Curhat extends \BaseModel{
 		'curhat_pin'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_pins'),
 	);
 	
-	protected static $append = array(
-		'detail',
-		'log_on_user'
-	);
 	
 	/*
 	|--------------------------------------------------------------------------

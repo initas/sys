@@ -1,5 +1,8 @@
 <?php
 class DB{
+	const BELONGS_TO = 1;
+	const BELONGS_TO_MANY = 2;
+	
 	protected static $table;
 	protected static $raw;
 	protected static $field = '*';
@@ -10,6 +13,8 @@ class DB{
 	
 	protected static $primaryTable;
 	protected static $foreignTable;
+	protected static $primaryTableId;
+	protected static $foreignTableId;
 	
 	protected static $connectionStatus;
 	protected static $pdo;
@@ -32,20 +37,6 @@ class DB{
 	
 	public function __construct(){}
 	
-	#relation
-	public static function __callStatic($name, $arguments)
-	{
-		$relationsData = static::$relationsData;
-		if(array_key_exists($name, $relationsData)){
-			if($relationsData[$name][0]==static::BELONGS_TO_MANY){
-				self::$table = $relationsData[$name][2];
-				self::$foreignTable =  self::getTableId($relationsData[$name][1]::$table);
-				self::$primaryTable = self::getTableId(static::$table);
-				self::$from = self::$primaryTable.', '.self::$foreignTable;
-			}
-			return new static;
-		}
-	}
 	
 	
 	#grabber
@@ -138,6 +129,29 @@ class DB{
 	}
 	
 	
+	#relation
+	public static function __callStatic($name, $arguments)
+	{
+		$relationsData = static::$relationsData;
+		if(array_key_exists($name, $relationsData)){
+			if($relationsData[$name][0]==static::BELONGS_TO){
+				self::$table = $relationsData[$name][1];
+				//self::$foreignTable =  self::getTableId($relationsData[$name][1]::$table);
+				//self::$primaryTable = self::getTableId(static::$table);
+				//self::$from = self::$primaryTable.', '.self::$foreignTable;
+			}
+			if($relationsData[$name][0]==static::BELONGS_TO_MANY){
+				self::$table = self::$from = $relationsData[$name][2];
+				self::$foreignTable =  $relationsData[$name][1]::$table;
+				self::$primaryTable = static::$table;
+				self::$foreignTableId =  self::getTableId($relationsData[$name][1]::$table);
+				self::$primaryTableId = self::getTableId(static::$table);
+				self::$field = self::$primaryTable.', '.self::$foreignTable;
+			}
+			return new static;
+		}
+	}
+	
 	#Relational db
 	public static function attach($ids, $secondary_ids){
 		$response = self::executeRelationalQuery($ids, $secondary_ids, DB::SINGLE_ATTACH_RESULT);
@@ -165,8 +179,8 @@ class DB{
 			}
 		}
 		
-		$deleteWhere = implode('" or `'.self::$primaryTable.'` = "', $ids);
-		$deleteWhere = '`'.self::$primaryTable.'` = "'.$deleteWhere.'"';
+		$deleteWhere = implode('" or `'.self::$primaryTableId.'` = "', $ids);
+		$deleteWhere = '`'.self::$primaryTableId.'` = "'.$deleteWhere.'"';
 		$deleteQuery = '
 			DELETE FROM
 				`'.self::$table.'`
@@ -176,7 +190,7 @@ class DB{
 		
 		$inserQuery = '
 			INSERT INTO
-				`'.self::$table.'` ('.self::$from.')
+				`'.self::$table.'` ('.self::$field.')
 			VALUES
 				'.implode(', ', $val).';
 			';
@@ -264,11 +278,25 @@ class DB{
 		if(self::$raw==null){
 			$field = self::$field;
 			$table = self::getTableName();
+			$foreignTable = self::$foreignTable;
 			$where = self::$where;
 			$orderBy = self::$orderBy;
 			$limit = self::$limit;
 			
 			$query ='select '.$field.' from '.$table.' ';
+			
+			if($foreignTable!=null){
+				$primaryTable = self::$primaryTable;
+				$primaryTableId = self::$primaryTableId;
+				$query ='
+					SELECT *
+					FROM '.$primaryTable.'
+					LEFT JOIN '.$table.'
+					ON '.$primaryTable.'.id = '.$table.'.'.$primaryTableId.'
+				'; 
+			}
+			
+			
 			if($where!=''){
 				$query .='where '.$where.' ';
 			}
@@ -296,6 +324,11 @@ class DB{
 		self::$limit = null;
 		self::$paginateDetails = null;
 		self::$paginateTotal = null;
+		
+		self::$primaryTable = null;
+		self::$foreignTable = null;
+		self::$primaryTableId = null;
+		self::$foreignTableId = null;
 	}
 	public static function refreshObject($db){
 		$db->query = null;
@@ -358,22 +391,23 @@ class DB{
 		if(isset(static::$append)){
 			$db = self::append($db, static::$append);
 		};
-		
 		self::refreshQuery();
 		return $db;
 	}
 	public static function append($db, $callbacks){
 		$results = $db->data;
-		if(!is_array($callbacks)){
-			$callbacks = array($callbacks);
-		}
-		foreach($results as $index => $result){
-			foreach($callbacks as $callback){
-				$response[$callback] = call_user_func(array(get_called_class(), 'append_'.$callback), $result);
-				$results[$index] = array_merge($result, $response);
+		if($results!=null){
+			if(!is_array($callbacks)){
+				$callbacks = array($callbacks);
 			}
+			foreach($results as $index => $result){
+				foreach($callbacks as $callback){
+					$response[$callback] = call_user_func(array(get_called_class(), 'append_'.$callback), $result);
+					$results[$index] = array_merge($result, $response);
+				}
+			}
+			$db->data = $results;
 		}
-		$db->data = $results;
 		return $db;
 	}
 }

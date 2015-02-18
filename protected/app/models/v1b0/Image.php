@@ -9,6 +9,15 @@ class Image extends \BaseModel{
 	|--------------------------------------------------------------------------
 	*/
 	protected static $table = 'images';
+	public static $relationsData = array(
+		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_attachments'),
+	);
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Methods
+	|--------------------------------------------------------------------------
+	*/
 	
 	#save
 	public static function saveImage($user_id){
@@ -53,6 +62,13 @@ class Image extends \BaseModel{
 		}else{
 			$response['errors'] = 'file not selected';
 		}
+		return $response;
+	}
+	
+	#append
+	public static function append_log_on_user($result){
+		$image_id = $result['id'];
+		$response['test'] = $image_id;
 		return $response;
 	}
 }
