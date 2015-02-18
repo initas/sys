@@ -45,30 +45,90 @@ class CurhatController extends \BaseController{
 			$response['data'] = $saveCurhat['result'];
 			
 			$file = Input::files("image");
-			$uploadImage = Image::uploadImage($file);
-			$statuses[] = $uploadImage['status'];
-			
-			if($uploadImage['status']==SUCCESS){
-				Input::post(array(
-					'title' => Input::post('image_title', null),
-					'file_name' => $uploadImage['result']['file_name'],
-					'url' => $uploadImage['result']['url'],
-					'size' => $uploadImage['result']['size'],
-					'mime' => $uploadImage['result']['mime']
-				));
+			if($file!=null){
+				$uploadImage = Image::uploadImage($file);
+				$statuses[] = $uploadImage['status'];
 				
-				$saveImage = Image::saveImage($user_id);
-				$statuses[] = $saveImage['status'];
-				
-				if($saveImage['status']==SUCCESS){
-					$curhat_id = $saveCurhat['result']['id'];
-					$image_id = $saveImage['result']['id'];
-					CurhatAttachment::synchCurhatAttachments($curhat_id, $image_id);
+				if($uploadImage['status']==SUCCESS){
+					Input::post(array(
+						'title' => Input::post('image_title', null),
+						'file_name' => $uploadImage['result']['file_name'],
+						'url' => $uploadImage['result']['url'],
+						'size' => $uploadImage['result']['size'],
+						'mime' => $uploadImage['result']['mime']
+					));
+					
+					$saveImage = Image::saveImage($user_id);
+					$statuses[] = $saveImage['status'];
+					
+					if($saveImage['status']==SUCCESS){
+						$curhat_id = $saveCurhat['result']['id'];
+						$image_id = $saveImage['result']['id'];
+						CurhatAttachment::synchCurhatAttachments($curhat_id, $image_id);
+					}else{
+						$response['errors'] = $saveImage['errors'];
+					}
 				}else{
-					$response['errors'] = $saveImage['errors'];
+					$response['errors'] = $uploadImage['errors'];
 				}
-			}else{
-				$response['errors'] = $uploadImage['errors'];
+			}
+			
+		}else{
+			$response['errors'] = $saveCurhat['errors'];
+		}
+		
+		if($this->checkStatuses($statuses)){
+			DB::commit();
+			$response['status'] = SUCCESS;
+		}elseIf(isset($response['errors'])){
+			$response['status'] = VALIDATION_FAIL;
+			$response['statuses'] = $statuses;
+		}else{
+			$response['status'] = TRANSACTION_FAILED;
+			$response['statuses'] = $statuses;
+		}
+		
+		return Response::json($response);
+	}
+	public function update($curhat_id){
+		DB::beginTransaction();
+		$statuses = array();
+		
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		
+		$saveCurhat = Curhat::updateCurhat($user_id, $curhat_id);
+		$statuses[] = $saveCurhat['status'];
+		if($saveCurhat['status']==SUCCESS){
+			$response['data'] = $saveCurhat['result'];
+			
+			$file = Input::files("image");
+			if($file!=null){
+				$uploadImage = Image::uploadImage($file);
+				$statuses[] = $uploadImage['status'];
+				
+				if($uploadImage['status']==SUCCESS){
+					Input::post(array(
+						'title' => Input::post('image_title', null),
+						'file_name' => $uploadImage['result']['file_name'],
+						'url' => $uploadImage['result']['url'],
+						'size' => $uploadImage['result']['size'],
+						'mime' => $uploadImage['result']['mime']
+					));
+					
+					$saveImage = Image::saveImage($user_id);
+					$statuses[] = $saveImage['status'];
+					
+					if($saveImage['status']==SUCCESS){
+						$curhat_id = $saveCurhat['result']['id'];
+						$image_id = $saveImage['result']['id'];
+						CurhatAttachment::synchCurhatAttachments($curhat_id, $image_id);
+					}else{
+						$response['errors'] = $saveImage['errors'];
+					}
+				}else{
+					$response['errors'] = $uploadImage['errors'];
+				}
 			}
 			
 		}else{

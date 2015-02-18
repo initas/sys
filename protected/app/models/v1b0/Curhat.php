@@ -152,8 +152,27 @@ class Curhat extends \BaseModel{
 	}
 	
 	#update
-	public static function updateCurhat($curhat_id){
-		$result = Curhat::update();
+	public static function updateCurhat($user_id, $curhat_id){
+		$response['status'] = UNKNOWN_ERROR;
+		
+		$curhat = new Curhat;
+		$curhat->user_id = $user_id;
+		$curhat->parent_id = $curhat_id;
+		
+		$curhat->fillable = array(
+			'to_user_id',
+			'description'
+		);
+		
+		if($curhat->save()) {
+			$response['status'] = SUCCESS;
+			$response['result'] = $curhat->data;
+		}else{
+			$response['status'] = VALIDATION_ERROR;
+			$response['errors'] = $curhat->errors;
+		}
+		
+		return $response;
 	}
 	
 	#delete

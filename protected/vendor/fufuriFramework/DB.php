@@ -88,7 +88,7 @@ class DB{
 		return $response;
 	}
 	
-	#store
+	#save
 	public function save(){
 		$db = new $this;
 		
@@ -389,7 +389,7 @@ class DB{
 		}
 		
 		self::refreshQuery();
-		if(isset(static::$append)){
+		if(isset(static::$append) && ($row_result_type == DB::MULTI_RESULT)){
 			$db = self::append($db, static::$append);
 		};
 		return $db;

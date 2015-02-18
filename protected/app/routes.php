@@ -33,7 +33,7 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 				Route::get('/pin', 'securhat\api\v1b0\CurhatController@pin');
 				Route::get('/unpin', 'securhat\api\v1b0\CurhatController@unpin');
 				Route::get('/edit', 'securhat\api\v1b0\CurhatController@edit'); 
-				Route::put('/', 'securhat\api\v1b0\CurhatController@update');
+				Route::post('/update', 'securhat\api\v1b0\CurhatController@update');
 			});
 		});
 	});
