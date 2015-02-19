@@ -10,7 +10,7 @@ class Image extends \BaseModel{
 	*/
 	protected static $table = 'images';
 	public static $relationsData = array(
-		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_attachments'),
+		'curhat_attachments' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_attachments'),
 	);
 	
 	/*

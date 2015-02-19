@@ -16,9 +16,9 @@ class CurhatPin extends \BaseModel{
 	*/
 	
 	#retrieve
-	public static function isPinned($curhat_id, $user_id){
+	public static function isPind($curhat_id, $user_id){
 		$db = CurhatPin::where('curhat_id', '=', $curhat_id)
-			->where('curhat_id', '=', $user_id)
+			->where('user_id', '=', $user_id)
 			->first();
 		$response = Response::validateQueryResponse($db);
 		if($response['status']==SUCCESS){
@@ -29,7 +29,7 @@ class CurhatPin extends \BaseModel{
 		return $response;
 	}
 	public static function getCurhatPins($curhat_id){
-		$db = CurhatPin::where('curhat_id', '=', $curhat_id)->paginate();
+		$db = User::curhat_pins()->where('curhat_id', '=', $curhat_id)->get();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
@@ -37,13 +37,13 @@ class CurhatPin extends \BaseModel{
 	#synch
 	public static function pin($curhat_id, $user_id){
 		self::unpin($curhat_id, $user_id);
-		Curhat::curhat_pin()->attach(
+		Curhat::curhat_pins()->attach(
 			$curhat_id,
 			$user_id
 		);
 	}
 	public static function unpin($curhat_id, $user_id){
-		Curhat::curhat_pin()->detach(
+		Curhat::curhat_pins()->detach(
 			$curhat_id,
 			$user_id
 		);

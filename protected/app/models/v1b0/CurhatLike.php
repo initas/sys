@@ -18,7 +18,7 @@ class CurhatLike extends \BaseModel{
 	#retrieve
 	public static function isLiked($curhat_id, $user_id){
 		$db = CurhatLike::where('curhat_id', '=', $curhat_id)
-			->where('curhat_id', '=', $user_id)
+			->where('user_id', '=', $user_id)
 			->first();
 		$response = Response::validateQueryResponse($db);
 		if($response['status']==SUCCESS){
@@ -29,7 +29,7 @@ class CurhatLike extends \BaseModel{
 		return $response;
 	}
 	public static function getCurhatLikes($curhat_id){
-		$db = User::curhat_like()->where('curhat_id', '=', $curhat_id)->get();
+		$db = User::curhat_likes()->where('curhat_id', '=', $curhat_id)->get();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
@@ -37,13 +37,13 @@ class CurhatLike extends \BaseModel{
 	#synch
 	public static function like($curhat_id, $user_id){
 		self::unlike($curhat_id, $user_id);
-		Curhat::curhat_like()->attach(
+		Curhat::curhat_likes()->attach(
 			$curhat_id,
 			$user_id
 		);
 	}
 	public static function unlike($curhat_id, $user_id){
-		Curhat::curhat_like()->detach(
+		Curhat::curhat_likes()->detach(
 			$curhat_id,
 			$user_id
 		);

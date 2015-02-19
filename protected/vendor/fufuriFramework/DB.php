@@ -142,11 +142,17 @@ class DB{
 			}
 			if($relationsData[$name][0]==static::BELONGS_TO_MANY){
 				self::$table = self::$from = $relationsData[$name][2];
-				self::$foreignTable =  $relationsData[$name][1]::$table;
 				self::$primaryTable = static::$table;
-				self::$foreignTableId =  self::getTableId($relationsData[$name][1]::$table);
-				self::$primaryTableId = self::getTableId(static::$table);
-				self::$field = self::$primaryTable.', '.self::$foreignTable;
+				self::$foreignTable =  $relationsData[$name][1]::$table;
+				
+				if(isset($relationsData[$name]['foreign_table'])){
+					self::$foreignTable = $relationsData[$name]['foreign_table'];
+				}
+				
+				self::$primaryTableId = self::getTableId(self::$primaryTable);
+				self::$foreignTableId =  self::getTableId(self::$foreignTable);
+				self::$field = self::$primaryTableId.', '.self::$foreignTableId;
+				
 			}
 			return new static;
 		}
@@ -166,7 +172,9 @@ class DB{
 		return $response;
 	}
 	public static function executeRelationalQuery($ids, $secondary_ids, $row_result_type){
-		$val = array();
+		$values = array();
+		$deleteWheres = array();
+		$deleteOrWheres = array();
 		if(!is_array($ids)){
 			$ids = array($ids);
 		}
@@ -175,12 +183,21 @@ class DB{
 		}
 		foreach($ids as $id){
 			foreach($secondary_ids as $secondary_id){
-				$val[] = '("'.$id.'", "'.$secondary_id.'")';
+				$values[] = '("'.$id.'", "'.$secondary_id.'")';
+				$deleteWheres[] = '(`'.self::$primaryTableId.'` = "'.$id.'" and `'.self::$foreignTableId.'` = "'.$secondary_id.'")';
+				$deleteOrWheres[] = '(`'.self::$primaryTableId.'` = "'.$id.'")';
 			}
 		}
 		
-		$deleteWhere = implode('" or `'.self::$primaryTableId.'` = "', $ids);
-		$deleteWhere = '`'.self::$primaryTableId.'` = "'.$deleteWhere.'"';
+		$deleteOrWhere = implode(' or ', $deleteOrWheres);
+		$deleteOrWhere = '
+			DELETE FROM
+				`'.self::$table.'`
+			WHERE 
+				'.$deleteOrWhere.';
+		';
+		
+		$deleteWhere = implode(' or ', $deleteWheres);
 		$deleteQuery = '
 			DELETE FROM
 				`'.self::$table.'`
@@ -192,7 +209,7 @@ class DB{
 			INSERT INTO
 				`'.self::$table.'` ('.self::$field.')
 			VALUES
-				'.implode(', ', $val).';
+				'.implode(', ', $values).';
 			';
 			
 		if($row_result_type == DB::SINGLE_ATTACH_RESULT){
@@ -200,11 +217,13 @@ class DB{
 		}elseif($row_result_type == DB::SINGLE_DETACH_RESULT){
 			$relationalQuery = $deleteQuery;
 		}elseif($row_result_type == DB::SINGLE_SYNCH_RESULT){
-			$relationalQuery = $deleteQuery.' '.$inserQuery;
+			$relationalQuery = $deleteOrWhere.' '.$inserQuery;
 		}
 		
-		self::executeQuery($relationalQuery, $row_result_type);
+		$db = self::executeQuery($relationalQuery, $row_result_type);
 		self::refreshQuery();
+		
+		return $db;
 	}
 	
 	#query
@@ -289,7 +308,7 @@ class DB{
 				$primaryTable = self::$primaryTable;
 				$primaryTableId = self::$primaryTableId;
 				$query ='
-					SELECT *
+					SELECT '.$primaryTable.'.*
 					FROM '.$primaryTable.'
 					LEFT JOIN '.$table.'
 					ON '.$primaryTable.'.id = '.$table.'.'.$primaryTableId.'

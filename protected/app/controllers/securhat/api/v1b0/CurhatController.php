@@ -3,6 +3,7 @@ namespace securhat\api\v1b0;
 use model\v1b0\Curhat;
 use model\v1b0\CurhatAttachment;
 use model\v1b0\CurhatLike;
+use model\v1b0\CurhatPin;
 use model\v1b0\Image;
 use model\v1b0\User;
 use \DB;
@@ -194,7 +195,7 @@ class CurhatController extends \BaseController{
 		$user_id = $userLoginData['result']['id'];
 		$curhat = Curhat::getCurhat($curhat_id);
 		$curhat_id = $curhat['result']['id'];
-		$response = Curhat::unlike($curhat_id, $user_id);
+		$response = CurhatLike::unlike($curhat_id, $user_id);
 		return Response::json($response);
 	}
 	public function pin($curhat_id){
@@ -202,13 +203,13 @@ class CurhatController extends \BaseController{
 		$user_id = $userLoginData['result']['id'];
 		$curhat = Curhat::getCurhat($curhat_id);
 		$curhat_id = $curhat['result']['id'];
-		$response = Curhat::pin($curhat_id, $user_id);
+		$response = CurhatPin::pin($curhat_id, $user_id);
 		return Response::json($response);
 	}
 	public function unpin($curhat_id){
 		$userLoginData = Auth::getUserLoginData();
 		$user_id = $userLoginData['result']['id'];
-		$curhat = Curhat::getCurhat($curhat_id);
+		$curhat = CurhatPin::getCurhat($curhat_id);
 		$curhat_id = $curhat['result']['id'];
 		$response = Curhat::unpin($curhat_id, $user_id);
 		return Response::json($response);

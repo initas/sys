@@ -9,7 +9,8 @@ class User extends \BaseModel{
 	*/
 	protected static $table = 'users';
 	public static $relationsData = array(
-		'curhat_like' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_likes'),
+		'curhat_likes' => array(self::BELONGS_TO_MANY, 'model\v1b0\Curhat', 'curhat_likes'),
+		'friends' => array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'friends', 'foreign_table' => 'to_user'),
 	);
 	
 	/*

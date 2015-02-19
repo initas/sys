@@ -17,8 +17,8 @@ class Curhat extends \BaseModel{
 		'user'				=> array(self::BELONGS_TO, 'model\v1b0\User'),
 		'to_user'			=> array(self::BELONGS_TO, 'model\v1b0\User'),
 		'curhat_attachment' => array(self::BELONGS_TO_MANY, 'model\v1b0\Image', 'curhat_attachments'),
-		'curhat_like'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_likes'),
-		'curhat_pin'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_pins'),
+		'curhat_likes'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_likes'),
+		'curhat_pins'		=> array(self::BELONGS_TO_MANY, 'model\v1b0\User', 'curhat_pins'),
 	);
 	
 	
@@ -67,7 +67,7 @@ class Curhat extends \BaseModel{
 				where( 
 					user_id in(
 						SELECT a.to_user_id
-						FROM friend_requests a, friend_requests b
+						FROM friends a, friends b
 						WHERE a.user_id = b.to_user_id
 						AND b.user_id = a.to_user_id
 						AND a.user_id = '.$user_id.'

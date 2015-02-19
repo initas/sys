@@ -48,6 +48,22 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 		});
 	});
 	
+	#friend
+	Route::group(array('prefix' => '/user/{username}/friend'), function()
+	{
+		Route::get('/', 'securhat\api\v1b0\FriendController@index');
+		Route::group(array('before' => 'requireLogin.api'), function()
+		{
+			Route::get('/add', 'securhat\api\v1b0\FriendController@save');
+			Route::get('/remove', 'securhat\api\v1b0\FriendController@delete');
+			Route::group(array('before' => 'identicalUsernameSession.api'), function()
+			{
+				Route::get('/incoming-requests', 'securhat\api\v1b0\FriendController@getIncomingFriendRequest');
+				Route::get('/sent-requests', 'securhat\api\v1b0\FriendController@getSentFriendRequest');
+			});
+		});
+	});
+	
 	#img
 	Route::group(array('prefix' => '/img'), function()
 	{

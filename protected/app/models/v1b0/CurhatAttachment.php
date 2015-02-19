@@ -22,14 +22,14 @@ class CurhatAttachment extends \BaseModel{
 	
 	#retrieve
 	public static function getCurhatAttachments($curhat_id){
-		$db = Image::curhat_attachment()->where('curhat_id', '=', $curhat_id)->get();
+		$db = Image::curhat_attachments()->where('curhat_id', '=', $curhat_id)->get();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
 	
 	#synch
 	public static function synchCurhatAttachments($curhat_id, $image_id){
-		Curhat::curhat_attachment()->synch(
+		Curhat::curhat_attachments()->synch(
 			$curhat_id,
 			$image_id
 		);
