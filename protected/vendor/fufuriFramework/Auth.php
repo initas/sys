@@ -28,6 +28,12 @@ class Auth{
 			$db = User::where('username', '=', $username)->orWhere('email', '=', $email)->first();
 		}
 		$response = Response::validateQueryResponse($db);
+		if($db->data==null){
+			$columnNames = User::getColumnNames();
+			foreach($columnNames as $columnName){
+				$response['result'][$columnName] = null;
+			}
+		}
 		return $response;
 	}
 }

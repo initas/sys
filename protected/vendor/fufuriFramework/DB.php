@@ -284,8 +284,10 @@ class DB{
 		$tableId = str_ireplace('s_id', '_id', $table.'_id');
 		return $tableId;
 	}
-	public static function getColumnNames(){
-		$tableName = self::getTableName();
+	public static function getColumnNames($tableName = null){
+		if($tableName==null){
+			$tableName = self::getTableName();
+		}
 		$pdo = self::openPdo()->prepare('DESCRIBE `'.$tableName.'`');
 		if($pdo->execute()){
 			if($fetch = $pdo->fetchAll(PDO::FETCH_COLUMN)){

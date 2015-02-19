@@ -68,7 +68,7 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 	Route::group(array('prefix' => '/img'), function()
 	{
 		Route::get('/curhat/{size}/{file_name}', 'securhat\api\v1b0\ImageController@getCurhatImage');
-		Route::post('/', 'securhat\api\v1b0\ImageController@uploadImage');
+		Route::post('/', 'securhat\api\v1b0\ImageController@save');
 	});
 	
 	#log

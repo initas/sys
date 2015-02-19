@@ -42,7 +42,7 @@ class Friend extends \BaseModel{
 					)
 				)
 			')
-			->get();
+			->paginate();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
@@ -66,7 +66,7 @@ class Friend extends \BaseModel{
 					)
 				)
 			')
-			->get();
+			->paginate();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
@@ -90,7 +90,7 @@ class Friend extends \BaseModel{
 					)
 				)
 			')
-			->get();
+			->paginate();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}

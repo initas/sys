@@ -16,7 +16,7 @@ class CurhatPin extends \BaseModel{
 	*/
 	
 	#retrieve
-	public static function isPind($curhat_id, $user_id){
+	public static function isPinned($curhat_id, $user_id){
 		$db = CurhatPin::where('curhat_id', '=', $curhat_id)
 			->where('user_id', '=', $user_id)
 			->first();

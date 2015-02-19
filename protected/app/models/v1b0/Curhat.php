@@ -1,5 +1,6 @@
 <?php
 namespace model\v1b0;
+use \Auth;
 use \Response;
 class Curhat extends \BaseModel{
 	/*
@@ -150,6 +151,7 @@ class Curhat extends \BaseModel{
 		if($curhat->save()) {
 			$response['status'] = SUCCESS;
 			$response['result'] = $curhat->data;
+			Log::saveLog(SAVE_CURHAT, $user_id, $curhat->data['id']);
 		}else{
 			$response['status'] = VALIDATION_ERROR;
 			$response['errors'] = $curhat->errors;
@@ -174,6 +176,7 @@ class Curhat extends \BaseModel{
 		if($curhat->save()) {
 			$response['status'] = SUCCESS;
 			$response['result'] = $curhat->data;
+			Log::saveLog(UPDATE_CURHAT, $user_id, $curhat->data['id']);
 		}else{
 			$response['status'] = VALIDATION_ERROR;
 			$response['errors'] = $curhat->errors;
@@ -190,13 +193,14 @@ class Curhat extends \BaseModel{
 	#append
 	public static function append_log_on_user($result){
 		$curhat_id = $result['id'];
-		$response['is_liked'] = CurhatLike::isLiked($curhat_id, 1);
-		$response['is_pinned'] = CurhatPin::isPinned($curhat_id, 1);
+		$userLoginData = Auth::getUserLoginData();
+		$user_id = $userLoginData['result']['id'];
+		$response['is_liked'] = CurhatLike::isLiked($curhat_id, $user_id);
+		$response['is_pinned'] = CurhatPin::isPinned($curhat_id, $user_id);
 		return $response;
 	}
 	public static function append_detail($result){
 		$curhat_id = $result['id'];
-		
 		
 		$response['childs'] = null;
 		$getCurhatChilds = self::getCurhatChilds($curhat_id);
