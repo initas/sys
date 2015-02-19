@@ -18,7 +18,11 @@
 				"382177ce-96b4-279b-28c0-bbcb80478043",
 				"bcf3227d-f10c-b329-84be-2ff26db5d1f3",
 				"ca5830c7-e4d2-ff2b-dc17-0cdc20ba0010",
-				"8134842a-ddf0-ccc9-950a-77e38b913a5e"
+				"7428e04a-bbc0-6a34-0dff-daca42a5fd17",
+				"df8ad54d-f295-34b4-2015-9586ec67e764",
+				"1a178189-260b-7e5d-c46d-5799afc85009",
+				"56f1445e-2c4f-b6c1-591e-b12bfafe7de1",
+				"42fba7f4-f545-6fda-ef26-4519c889b3e0"
 			],
 			"collection_name": "Sys",
 			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
@@ -53,6 +57,31 @@
 			],
 			"collection_name": "Sys",
 			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+		},
+		{
+			"id": "2660d2bc-ff56-74ed-5215-23319ba37bb8",
+			"name": "friend",
+			"description": "",
+			"order": [
+				"4a0be2d2-f69a-5092-ce94-51c26631658c",
+				"b16c065a-877c-2107-4048-58068843f701",
+				"c783b15e-2147-e74e-c0ab-cb1c2309bbbf",
+				"a3e112b7-41b8-9236-a948-95297c30a5a9",
+				"3bfb7f25-d066-92ce-a1d9-09a155b5546c"
+			],
+			"collection_name": "Sys",
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+		},
+		{
+			"id": "47bedef3-5226-edaa-b1a5-b44857cf868b",
+			"name": "image",
+			"description": "",
+			"order": [
+				"de8ff51e-c41e-bc53-d39e-55b3ff22042f",
+				"58b5dd4c-f70f-7f53-aba2-2ea3cb426f30"
+			],
+			"collection_name": "Sys",
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
 		}
 	],
 	"timestamp": 1421901505378,
@@ -69,13 +98,13 @@
 			"data": [
 				{
 					"key": "username",
-					"value": "febri",
+					"value": "mf",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "password",
-					"value": "febri123",
+					"value": "a",
 					"type": "text",
 					"enabled": true
 				}
@@ -85,7 +114,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1422200263248,
+			"time": 1423337276267,
 			"name": "Log In",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
@@ -128,6 +157,26 @@
 			"helperAttributes": {},
 			"time": 1422738873034,
 			"name": "Get From User Curhat",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "1a178189-260b-7e5d-c46d-5799afc85009",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat/1/unlike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424274095484,
+			"name": "Unlike",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -247,6 +296,26 @@
 			"synced": false
 		},
 		{
+			"id": "3bfb7f25-d066-92ce-a1d9-09a155b5546c",
+			"headers": "",
+			"url": "{{api.1.0}}/user/inara/friend/remove",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424301853283,
+			"name": "Unfriend",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
 			"id": "3d682b1b-e35a-271e-63c2-a56a2efa50d9",
 			"headers": "",
 			"url": "{{api.1.0}}/user/suggestion",
@@ -261,6 +330,46 @@
 			"helperAttributes": {},
 			"time": 1422200196878,
 			"name": "Get User Pin",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "42fba7f4-f545-6fda-ef26-4519c889b3e0",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat/1/unpin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424274127386,
+			"name": "Unpin",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "4a0be2d2-f69a-5092-ce94-51c26631658c",
+			"headers": "",
+			"url": "{{api.1.0}}/user/mf/friend",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424301792007,
+			"name": "Get Friends",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -287,6 +396,53 @@
 			"synced": false
 		},
 		{
+			"id": "56f1445e-2c4f-b6c1-591e-b12bfafe7de1",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat/1/pin",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424274118487,
+			"name": "Pin",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "58b5dd4c-f70f-7f53-aba2-2ea3cb426f30",
+			"headers": "",
+			"url": "{{api.1.0}}/img",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "3a46e21cc953366bb39bc881f442ed181315734242_full.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423346588891,
+			"name": "Upload Image",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
 			"id": "6c3630a3-c0ef-711e-6429-72139a2065ee",
 			"headers": "",
 			"url": "{{api.1.0}}/log/user/febri",
@@ -307,19 +463,26 @@
 			"synced": false
 		},
 		{
-			"id": "8134842a-ddf0-ccc9-950a-77e38b913a5e",
-			"headers": "",
-			"url": "{{api.1.0}}/curhat/create",
+			"id": "7428e04a-bbc0-6a34-0dff-daca42a5fd17",
+			"headers": "username: mf\n",
+			"url": "{{api.1.0}}/curhat/1/update",
 			"preRequestScript": "",
 			"pathVariables": {},
-			"method": "PUT",
-			"data": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "description",
+					"value": "ini hasil edit",
+					"type": "text",
+					"enabled": true
+				}
+			],
 			"dataMode": "params",
 			"version": 2,
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1422199957377,
+			"time": 1424297006695,
 			"name": "Update",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
@@ -428,6 +591,46 @@
 			"synced": false
 		},
 		{
+			"id": "a3e112b7-41b8-9236-a948-95297c30a5a9",
+			"headers": "",
+			"url": "{{api.1.0}}/user/inara/friend/add",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424301861002,
+			"name": "Sent Friend Request",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b16c065a-877c-2107-4048-58068843f701",
+			"headers": "",
+			"url": "{{api.1.0}}/user/mf/friend/incoming-requests",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424304382916,
+			"name": "Get Incoming Friend Request",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
 			"id": "bcf3227d-f10c-b329-84be-2ff26db5d1f3",
 			"headers": "",
 			"url": "{{api.1.0}}/curhat/edit",
@@ -481,6 +684,39 @@
 			"synced": false
 		},
 		{
+			"id": "c783b15e-2147-e74e-c0ab-cb1c2309bbbf",
+			"headers": "",
+			"url": "{{api.1.0}}/user/mf/friend/sent-requests",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "mf",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "a",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424313714784,
+			"name": "Get Sent Friend Request",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
 			"id": "ca4e81d5-7d1d-9730-bc12-6af9cbc913fc",
 			"headers": "",
 			"url": "{{api.1.0}}/user/mf/curhat",
@@ -502,7 +738,7 @@
 		},
 		{
 			"id": "ca5830c7-e4d2-ff2b-dc17-0cdc20ba0010",
-			"headers": "",
+			"headers": "username: mf\n",
 			"url": "{{api.1.0}}/curhat/",
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -510,7 +746,19 @@
 			"data": [
 				{
 					"key": "description",
-					"value": "mau curhat~",
+					"value": "ini AGP",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "MS Girl Wing Gundam Zero.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "image_title",
+					"value": "AGP",
 					"type": "text",
 					"enabled": true
 				}
@@ -520,7 +768,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1422916551506,
+			"time": 1424020405662,
 			"name": "Store",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
@@ -555,6 +803,53 @@
 			"helperAttributes": {},
 			"time": 1422199893300,
 			"name": "Get Curhats",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "de8ff51e-c41e-bc53-d39e-55b3ff22042f",
+			"headers": "",
+			"url": "{{api.1.0}}/img/curhat/100/test.jpg",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "image",
+					"value": "3a46e21cc953366bb39bc881f442ed181315734242_full.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1423346591259,
+			"name": "Show Image",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "df8ad54d-f295-34b4-2015-9586ec67e764",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat/1/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1424274084800,
+			"name": "Like",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
