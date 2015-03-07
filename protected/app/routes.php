@@ -117,3 +117,13 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 		echo 'test';
 	});
 });
+
+
+Route::group(array('prefix' => '/web/v1b0'), function()
+{
+	#curhat
+	Route::group(array('prefix' => '/curhat'), function()
+	{
+		Route::get('/', 'securhat\web\v1b0\CurhatController@index');
+	});
+});

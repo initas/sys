@@ -1,10 +1,13 @@
 <?php
 class Response{
 	public static function json($response){
-		header('Content-type: application/json', true, 200);
 		if(isset($_GET['callback'])){
+			header('Content-type: application/json', true, 200);
 			echo $_GET['callback'].'(' .json_encode($response).');';
+		}else if(isset($_GET['reuse'])){
+			return $response;
 		}else{
+			header('Content-type: application/json', true, 200);
 			echo json_encode($response);
 		}
 		exit();

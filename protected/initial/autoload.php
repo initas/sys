@@ -20,4 +20,8 @@ function __autoload($class_path) {
 	if(file_exists($file)) {
 		require_once $file;
 	}
+	$file = 'protected/app/controllers/securhat/web/v1b0/'.$class_name.'.php';
+	if(file_exists($file)) {
+		require_once $file;
+	}
 }

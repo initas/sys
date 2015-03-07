@@ -10,4 +10,10 @@ class BaseController{
 		}
 		return $response;
 	}
+	
+	#callback
+	public function setReuse(){
+		$_GET['reuse'] = true;
+		return $this;
+	}
 }
