@@ -121,6 +121,11 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 
 Route::group(array('prefix' => '/web/v1b0'), function()
 {
+	#lp
+	Route::group(array('prefix' => '/welcome'), function()
+	{
+		Route::get('/', 'securhat\web\v1b0\WelcomeController@index');
+	});
 	#curhat
 	Route::group(array('prefix' => '/curhat'), function()
 	{

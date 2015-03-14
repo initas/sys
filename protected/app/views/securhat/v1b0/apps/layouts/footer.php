@@ -6,10 +6,5 @@
 </head>
 
 <body>
-	@foreach($response['results']['data'] as $id => $data)
-		@if($id%2)
-			<div>{{dd($data)}}</div>
-		@endif
-	@endforeach
 </body>
 </html>
