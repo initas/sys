@@ -372,9 +372,9 @@ class DB{
 	public static function openPdo(){
 		if(self::$connectionStatus==null){
 			$pdo = new PDO(
-				'mysql:host=127.0.0.1;dbname=system;charset = utf8',
-				'root', 
-				''
+				Config::database('driver').':host='.Config::database('host').';dbname='.Config::database('database').';charset = utf8',
+				Config::database('username'), 
+				Config::database('password')
 			);
 			self::$pdo = $pdo;
 			self::$connectionStatus = 1;

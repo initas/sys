@@ -5,18 +5,18 @@ use \File;
 use \Input;
 use \Response;
 use \Auth;
+use \URL;
 class ImageController extends \BaseController{
 	public static function getCurhatImage($size, $file_name){
-		$url = $_POST['baseUrl'];
+		$url = URL::baseDir();
 		$path = $url.'/img/curhat/'.$file_name;
 		File::getImageThumb($path, $size);
 	}
 	public static function uploadImage(){
-		$url = $_POST['baseUrl'];
+		$url = URL::baseDir();
 		$destination = $url.'/img/curhat/';
 		File::uploadImage($_FILES['image'], $destination);
 	}
-	
 	
 	public function save(){
 		$file = Input::files("image");

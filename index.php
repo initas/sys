@@ -1,8 +1,5 @@
 <?php
 session_start();
-$_POST['baseUrl'] = dirname(__FILE__);
-
-
 
 require_once 'protected/vendor/fufuriFramework/function.php';
 require_once 'protected/app/constants.php';
