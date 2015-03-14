@@ -10,6 +10,7 @@ class View{
 	public static function compile($url){
 		$content = file_get_contents('protected/app/views/'.$url);
 		$content = self::reCompile($content);
+		//ss($content);
 		self::$content = $content;
 		return new static;
 	}
@@ -41,6 +42,10 @@ class View{
 			$content
 		);
 		
+		#echo
+		$regexp= '/{{(.*?)}}/si';
+		$replacement= '<?php echo $1 ?>';
+		$content = preg_replace($regexp, $replacement, $content);
 		
 		#html
 		//style
@@ -50,7 +55,7 @@ class View{
 		
 		//script
 		$regexp= '/@script\((.*?)\)/si';
-		$replacement= '<?php HTML::script($1) ?>';
+		$replacement= '<?php echo HTML::script($1) ?>';
 		$content = preg_replace($regexp, $replacement, $content);
 		
 		#iteration
