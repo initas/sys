@@ -1,4 +1,13 @@
+<?php
+	$users_total = $response['users_total'];
+	$curhats_total = $response['curhats_total'];
+	$curhat_comments_total = $response['curhat_comments_total'];
+?>
+
 @extends('securhat/v1b0/lp/layouts/master.php')
+@section('modals')
+	@include('securhat/v1b0/lp/modals/sign-up-modal.php')
+@stop
 @section('content')
 	<div class="content" id="welcome">
 		<div class="container">
@@ -28,19 +37,19 @@
 	<div class="pattern content" id="berbagi">
 		<div class="container">
 			<h1 class="item-title">Sebuah Curahan Hati </h1>
-			<p class="item-descr">Ayo bergabung dengan Securhat.com untuk berbagi bersama 2000 user yang telah terdaftar. Curahkan isi hati kamu dan temukan yang sehati dengan Kamu!</p>
+			<p class="item-descr">Ayo bergabung dengan Securhat.com untuk berbagi bersama {{$users_total}} user yang telah terdaftar. Curahkan isi hati kamu dan temukan yang sehati dengan Kamu!</p>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="item">
 						<div class="item-img"><img src="{{URL::to('img/stock/'.V_URL.'/berbagi/status_01.png')}}"></div>
-						<div class="item-title">716</div>
+						<div class="item-title">{{$curhats_total}}</div>
 						<div class="item-descr">Curhat</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="item">
 						<div class="item-img"><img src="{{URL::to('img/stock/'.V_URL.'/berbagi/status_02.png')}}"></div>
-						<div class="item-title">270</div>
+						<div class="item-title">{{$users_total}}</div>
 						<div class="item-descr">Hati</div>
 					</div>
 				</div>
@@ -54,7 +63,7 @@
 				<div class="col-md-3">
 					<div class="item">
 						<div class="item-img"><img src="{{URL::to('img/stock/'.V_URL.'/berbagi/status_04.png')}}"></div>
-						<div class="item-title">3.000</div>
+						<div class="item-title">{{$curhat_comments_total}}</div>
 						<div class="item-descr">Komentar</div>
 					</div>
 				</div>
@@ -158,7 +167,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="map-container hidden-xs hidden-sm">
-						<div id="map-canvas">asdasdasd</div>
+						<div id="map-canvas">loading</div>
 					</div>
 				</div>
 				<div class="col-md-6">

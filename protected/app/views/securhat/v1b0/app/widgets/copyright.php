@@ -1,0 +1,1 @@
+<div class="widget copyright">&copy; 2013 ICODEA</div>

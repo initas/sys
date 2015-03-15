@@ -1,13 +1,13 @@
 <?php
 namespace model\v1b0;
 use \Response;
-class CurhatLike extends \BaseModel{
+class CurhatCommentLike extends \BaseModel{
 	/*
 	|--------------------------------------------------------------------------
 	| Basic Setups
 	|--------------------------------------------------------------------------
 	*/
-	protected static $table = 'curhat_likes';
+	protected static $table = 'curhat_comment_likes';
 	
 	/*
 	|--------------------------------------------------------------------------
@@ -16,8 +16,8 @@ class CurhatLike extends \BaseModel{
 	*/
 	
 	#retrieve
-	public static function isLiked($curhat_id, $user_id){
-		$db = CurhatLike::where('curhat_id', '=', $curhat_id)
+	public static function isLiked($curhat_comment_id, $user_id){
+		$db = CurhatCommentLike::where('curhat_comment_id', '=', $curhat_comment_id)
 			->where('user_id', '=', $user_id)
 			->first();
 		$response = Response::validateQueryResponse($db);
@@ -28,23 +28,23 @@ class CurhatLike extends \BaseModel{
 		}
 		return $response;
 	}
-	public static function getCurhatLikes($curhat_id){
-		$db = User::curhat_likes()->where('curhat_id', '=', $curhat_id)->paginate();
+	public static function getCurhatCommentLikes($curhat_comment_id){
+		$db = User::curhat_comment_likes()->where('curhat_comment_id', '=', $curhat_comment_id)->paginate();
 		$response = Response::validateQueryResponse($db);
 		return $response;
 	}
 	
 	#synch
-	public static function like($curhat_id, $user_id){
-		self::unlike($curhat_id, $user_id);
-		Curhat::curhat_likes()->attach(
-			$curhat_id,
+	public static function like($curhat_comment_id, $user_id){
+		self::unlike($curhat_comment_id, $user_id);
+		CurhatComment::curhat_comment_likes()->attach(
+			$curhat_comment_id,
 			$user_id
 		);
 	}
-	public static function unlike($curhat_id, $user_id){
-		Curhat::curhat_likes()->detach(
-			$curhat_id,
+	public static function unlike($curhat_comment_id, $user_id){
+		CurhatComment::curhat_comment_likes()->detach(
+			$curhat_comment_id,
 			$user_id
 		);
 	}

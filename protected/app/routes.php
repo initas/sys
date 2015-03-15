@@ -48,6 +48,27 @@ Route::group(array('prefix' => '/api/v1b0'), function()
 		});
 	});
 	
+	
+	#curhat-comment
+	Route::group(array('prefix' => '/curhat-comment'), function()
+	{
+		Route::get('/', 'securhat\api\v1b0\CurhatCommentController@index');
+		Route::group(array('before' => 'require.login.api'), function()
+		{
+			Route::get('/{curhat_comment_id}/edit', 'securhat\api\v1b0\CurhatCommentController@edit');
+			Route::get('/{curhat_comment_id}/like', 'securhat\api\v1b0\CurhatCommentController@like');
+			Route::get('/{curhat_comment_id}/unlike', 'securhat\api\v1b0\CurhatCommentController@unlike');
+		});
+	});
+	Route::group(array('prefix' => '/curhat/{curhat_id}/comment'), function()
+	{
+		Route::get('/', 'securhat\api\v1b0\CurhatCommentController@getCurhatComments');
+		Route::group(array('before' => 'requireLogin.api'), function()
+		{
+			Route::post('/', 'securhat\api\v1b0\CurhatCommentController@save');
+		});
+	});
+	
 	#friend
 	Route::group(array('prefix' => '/user/{username}/friend'), function()
 	{
@@ -126,9 +147,18 @@ Route::group(array('prefix' => '/web/v1b0'), function()
 	{
 		Route::get('/', 'securhat\web\v1b0\WelcomeController@index');
 	});
+	
 	#curhat
 	Route::group(array('prefix' => '/curhat'), function()
 	{
 		Route::get('/', 'securhat\web\v1b0\CurhatController@index');
 	});
+	
+	
+	#curhat
+	Route::group(array('prefix' => '/{username}'), function()
+	{
+		Route::get('/', 'securhat\web\v1b0\HomeController@index');
+	});
+	
 });

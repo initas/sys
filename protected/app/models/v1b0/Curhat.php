@@ -220,6 +220,12 @@ class Curhat extends \BaseModel{
 			$response['likes'] = $getCurhatLikes['results'];
 		}
 		
+		$response['comments'] = null;
+		$getCurhatComments = CurhatComment::getCurhatComments($curhat_id);
+		if($getCurhatComments['status'] == SUCCESS){
+			$response['comments'] = $getCurhatComments['results'];
+		}
+		
 		return $response;
 	}
 	

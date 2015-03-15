@@ -9,7 +9,10 @@ class URL{
 		return $host;
 	}
 	public static function to($url){
-		$to = self::baseUrl().'/'.$url;
+		$to = $url;
+		if(!preg_match('/(http|ftp)/si', $url)){
+			$to = self::baseUrl().'/'.$to;
+		}
 		return $to;
 	}
 	public static function baseDir(){

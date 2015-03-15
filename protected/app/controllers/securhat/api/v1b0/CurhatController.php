@@ -6,10 +6,10 @@ use model\v1b0\CurhatLike;
 use model\v1b0\CurhatPin;
 use model\v1b0\Image;
 use model\v1b0\User;
+use \Auth;
 use \DB;
 use \Input;
 use \Response;
-use \Auth;
 class CurhatController extends \BaseController{
 	
 	/*--- Implemented Controller ---*/
