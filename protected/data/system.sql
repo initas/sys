@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2015 at 11:45 PM
+-- Generation Time: May 14, 2015 at 05:40 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -151,7 +151,7 @@ CREATE TABLE IF NOT EXISTS `curhat_comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `curhat_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `to_user_id` int(11) NOT NULL,
+  `to_user_id` int(11) DEFAULT NULL,
   `description` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -159,7 +159,44 @@ CREATE TABLE IF NOT EXISTS `curhat_comments` (
   PRIMARY KEY (`id`),
   KEY `curhat_id` (`curhat_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `curhat_comments`
+--
+
+INSERT INTO `curhat_comments` (`id`, `curhat_id`, `user_id`, `to_user_id`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 1, NULL, 'ok deh', '2015-03-14 16:52:49', NULL, NULL),
+(2, 1, 2, NULL, 'selow', '2015-03-14 16:53:46', NULL, NULL),
+(3, 2, 2, NULL, 'hmmm', '2015-03-14 16:53:46', NULL, NULL),
+(4, 1, 1, NULL, 'ini comment', '2015-03-14 18:34:21', NULL, NULL),
+(5, 1, 1, NULL, 'ini comment', '2015-03-14 18:34:26', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `curhat_comment_likes`
+--
+
+CREATE TABLE IF NOT EXISTS `curhat_comment_likes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curhat_comment_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `curhat_id` (`curhat_comment_id`),
+  KEY `image_id` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `curhat_comment_likes`
+--
+
+INSERT INTO `curhat_comment_likes` (`id`, `curhat_comment_id`, `user_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(15, 1, 1, '2015-03-14 18:24:06', NULL, NULL),
+(17, 1, 2, '2015-03-14 18:24:12', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -177,7 +214,14 @@ CREATE TABLE IF NOT EXISTS `curhat_likes` (
   PRIMARY KEY (`id`),
   KEY `curhat_id` (`curhat_id`),
   KEY `image_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `curhat_likes`
+--
+
+INSERT INTO `curhat_likes` (`id`, `curhat_id`, `user_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 1, '2015-03-14 18:15:16', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -281,7 +325,7 @@ CREATE TABLE IF NOT EXISTS `images` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `deleted_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `images`
@@ -298,7 +342,8 @@ INSERT INTO `images` (`id`, `title`, `file_name`, `url`, `size`, `mime`, `create
 (8, 'ok', 'ms%20girl%20wing%20gundam%20ew.jpg', '387a255af42c9214426ac7aafdaed765.jpg', 56957, 'image/jpeg', '2015-02-19 04:25:23', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (9, 'ok', 'ms%20girl%20wing%20gundam%20ew.jpg', '503efaab419b12f51462ae3ef3767a01.jpg', 56957, 'image/jpeg', '2015-02-19 04:26:32', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (10, 'ok', 'ms%20girl%20wing%20gundam%20ew.jpg', '7435f20c93d2333b2e751a4bb96a3a17.jpg', 56957, 'image/jpeg', '2015-02-19 04:27:27', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(11, 'ok', 'ms%20girl%20wing%20gundam%20ew.jpg', '8a9da092f7e92dc879fc3123e49a639a.jpg', 56957, 'image/jpeg', '2015-02-19 04:27:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(11, 'ok', 'ms%20girl%20wing%20gundam%20ew.jpg', '8a9da092f7e92dc879fc3123e49a639a.jpg', 56957, 'image/jpeg', '2015-02-19 04:27:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(12, 'miku', 'miku.jpg', 'c47866293d12ce099e52e701c2dd5090.jpg', 80770, 'image/jpeg', '2015-02-19 23:15:30', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -484,23 +529,30 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `full_name`, `place_
 -- Constraints for table `curhats`
 --
 ALTER TABLE `curhats`
-  ADD CONSTRAINT `curhats_ibfk_3` FOREIGN KEY (`parent_id`) REFERENCES `curhats` (`id`),
   ADD CONSTRAINT `curhats_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `curhats_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `curhats_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `curhats_ibfk_3` FOREIGN KEY (`parent_id`) REFERENCES `curhats` (`id`);
 
 --
 -- Constraints for table `curhat_attachments`
 --
 ALTER TABLE `curhat_attachments`
-  ADD CONSTRAINT `curhat_attachments_ibfk_2` FOREIGN KEY (`image_id`) REFERENCES `images` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `curhat_attachments_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `curhat_attachments_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curhat_attachments_ibfk_2` FOREIGN KEY (`image_id`) REFERENCES `images` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `curhat_comments`
 --
 ALTER TABLE `curhat_comments`
-  ADD CONSTRAINT `curhat_comments_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `curhat_comments_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`);
+  ADD CONSTRAINT `curhat_comments_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`),
+  ADD CONSTRAINT `curhat_comments_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `curhat_comment_likes`
+--
+ALTER TABLE `curhat_comment_likes`
+  ADD CONSTRAINT `curhat_comment_likes_ibfk_1` FOREIGN KEY (`curhat_comment_id`) REFERENCES `curhat_comments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curhat_comment_likes_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `curhat_likes`
@@ -513,30 +565,30 @@ ALTER TABLE `curhat_likes`
 -- Constraints for table `curhat_pins`
 --
 ALTER TABLE `curhat_pins`
-  ADD CONSTRAINT `curhat_pins_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `curhat_pins_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `curhat_pins_ibfk_1` FOREIGN KEY (`curhat_id`) REFERENCES `curhats` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curhat_pins_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `friends`
 --
 ALTER TABLE `friends`
-  ADD CONSTRAINT `friends_ibfk_3` FOREIGN KEY (`friend_status_id`) REFERENCES `friend_statuses` (`id`),
   ADD CONSTRAINT `friends_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `friends_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `friends_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `friends_ibfk_3` FOREIGN KEY (`friend_status_id`) REFERENCES `friend_statuses` (`id`);
 
 --
 -- Constraints for table `logs`
 --
 ALTER TABLE `logs`
-  ADD CONSTRAINT `logs_ibfk_5` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `logs_ibfk_4` FOREIGN KEY (`log_type_id`) REFERENCES `log_types` (`id`);
+  ADD CONSTRAINT `logs_ibfk_4` FOREIGN KEY (`log_type_id`) REFERENCES `log_types` (`id`),
+  ADD CONSTRAINT `logs_ibfk_5` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
 -- Constraints for table `private_messages`
 --
 ALTER TABLE `private_messages`
-  ADD CONSTRAINT `private_messages_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `private_messages_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `private_messages_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `private_messages_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `users` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

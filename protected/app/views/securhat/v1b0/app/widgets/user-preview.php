@@ -12,15 +12,15 @@
 	<div class="row">
 		<div class="col-xs-4">
 			<div class="title">CURHAT</div>
-			<div class="value">1</div>
+			<div class="value"><a href="#">70</a></div>
 		</div>
 		<div class="col-xs-4">
-			<div class="title">CURHAT</div>
-			<div class="value">1</div>
+			<div class="title">FRIENDS</div>
+			<div class="value"><a href="#">15</a></div>
 		</div>
 		<div class="col-xs-4">
-			<div class="title">CURHAT</div>
-			<div class="value">1</div>
+			<div class="title">RANK</div>
+			<div class="value"><a href="#">Curhater</a></div>
 		</div>
 	</div>
 </div>

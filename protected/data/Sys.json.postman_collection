@@ -5,6 +5,25 @@
 	"order": [],
 	"folders": [
 		{
+			"id": "bbadf4ed-3f77-1284-1e2e-90dc6ed50560",
+			"name": "Curhat Comment",
+			"description": "",
+			"write": true,
+			"order": [
+				"b7bf675b-7da7-c431-d59f-7a4b48ff3937",
+				"f40c3778-e8b4-449a-d631-81eddcc35188",
+				"b9e32f19-45e2-e011-0087-61a79fe7fa1f",
+				"e49d5d19-15a3-f7a7-19b5-cde8f0c2b801",
+				"c4e80d7b-a306-b449-9a37-7f3bf7c70482"
+			],
+			"collection_name": "Sys",
+			"collection_owner": "",
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"owner": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+		},
+		{
 			"id": "9454b2b9-3074-b9c9-31ab-7298a171a2c4",
 			"name": "Curhat",
 			"description": "",
@@ -17,15 +36,18 @@
 				"f8256f6f-473f-96f1-1c2e-9984cedf664c",
 				"382177ce-96b4-279b-28c0-bbcb80478043",
 				"bcf3227d-f10c-b329-84be-2ff26db5d1f3",
-				"ca5830c7-e4d2-ff2b-dc17-0cdc20ba0010",
-				"7428e04a-bbc0-6a34-0dff-daca42a5fd17",
 				"df8ad54d-f295-34b4-2015-9586ec67e764",
 				"1a178189-260b-7e5d-c46d-5799afc85009",
 				"56f1445e-2c4f-b6c1-591e-b12bfafe7de1",
-				"42fba7f4-f545-6fda-ef26-4519c889b3e0"
+				"42fba7f4-f545-6fda-ef26-4519c889b3e0",
+				"ca5830c7-e4d2-ff2b-dc17-0cdc20ba0010",
+				"7428e04a-bbc0-6a34-0dff-daca42a5fd17"
 			],
 			"collection_name": "Sys",
-			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection_owner": "",
+			"write": true,
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
 		},
 		{
 			"id": "83d7d1cd-7e6f-eb8e-c60e-2efba15479ed",
@@ -37,7 +59,9 @@
 				"1128c1cd-4e75-635e-ce7e-4b726dc54fae"
 			],
 			"collection_name": "Sys",
-			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection_owner": "",
+			"write": true
 		},
 		{
 			"id": "35470e49-b784-28ff-74ca-51f8f7889962",
@@ -56,7 +80,9 @@
 				"9a2b69ec-c168-3df0-3ddd-cd024d01ad8a"
 			],
 			"collection_name": "Sys",
-			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection_owner": "",
+			"write": true
 		},
 		{
 			"id": "2660d2bc-ff56-74ed-5215-23319ba37bb8",
@@ -70,7 +96,9 @@
 				"3bfb7f25-d066-92ce-a1d9-09a155b5546c"
 			],
 			"collection_name": "Sys",
-			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection_owner": "",
+			"write": true
 		},
 		{
 			"id": "47bedef3-5226-edaa-b1a5-b44857cf868b",
@@ -81,12 +109,18 @@
 				"58b5dd4c-f70f-7f53-aba2-2ea3cb426f30"
 			],
 			"collection_name": "Sys",
-			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a"
+			"collection_id": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"collection_owner": "",
+			"write": true
 		}
 	],
 	"timestamp": 1421901505378,
 	"synced": false,
-	"remoteLink": "",
+	"owner": "",
+	"subscribed": false,
+	"remoteLink": "https://www.getpostman.com/collections/d9130abacf43423b93c3",
+	"public": false,
+	"write": true,
 	"requests": [
 		{
 			"id": "1128c1cd-4e75-635e-ce7e-4b726dc54fae",
@@ -309,7 +343,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1424301853283,
-			"name": "Unfriend",
+			"name": "Send Unfriend Request",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -425,8 +459,14 @@
 			"data": [
 				{
 					"key": "image",
-					"value": "3a46e21cc953366bb39bc881f442ed181315734242_full.jpg",
+					"value": "miku.jpg",
 					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "miku",
+					"type": "text",
 					"enabled": true
 				}
 			],
@@ -435,7 +475,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1423346588891,
+			"time": 1424387729642,
 			"name": "Upload Image",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
@@ -604,7 +644,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1424301861002,
-			"name": "Sent Friend Request",
+			"name": "Send Friend Request",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -625,6 +665,53 @@
 			"helperAttributes": {},
 			"time": 1424304382916,
 			"name": "Get Incoming Friend Request",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b7bf675b-7da7-c431-d59f-7a4b48ff3937",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat-comment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1426352164114,
+			"name": "index",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b9e32f19-45e2-e011-0087-61a79fe7fa1f",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat-comment/1/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "description",
+					"value": "ini comment",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1426356871978,
+			"name": "Like",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -678,6 +765,33 @@
 			"helperAttributes": {},
 			"time": 1422200234819,
 			"name": "Update",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "c4e80d7b-a306-b449-9a37-7f3bf7c70482",
+			"headers": "username: mf\n",
+			"url": "{{api.1.0}}/curhat/1/comment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "description",
+					"value": "ini comment",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1426356116295,
+			"name": "Store Curhat Comment",
 			"description": "",
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
@@ -854,6 +968,57 @@
 			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
 			"responses": [],
 			"synced": false
+		},
+		{
+			"id": "e49d5d19-15a3-f7a7-19b5-cde8f0c2b801",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat-comment/1/like",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "description",
+					"value": "ini comment",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1426356871978,
+			"name": "Unlike",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false,
+			"folder": "bbadf4ed-3f77-1284-1e2e-90dc6ed50560"
+		},
+		{
+			"id": "f40c3778-e8b4-449a-d631-81eddcc35188",
+			"headers": "",
+			"url": "{{api.1.0}}/curhat/1/comment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1426351159670,
+			"name": "Get Curhat Comment",
+			"description": "",
+			"collectionId": "58340be9-3ae1-b993-261d-afbb7d7bd99a",
+			"responses": [],
+			"synced": false,
+			"folder": "bbadf4ed-3f77-1284-1e2e-90dc6ed50560",
+			"isFromCollection": true,
+			"collectionRequestId": "b7bf675b-7da7-c431-d59f-7a4b48ff3937"
 		},
 		{
 			"id": "f8256f6f-473f-96f1-1c2e-9984cedf664c",

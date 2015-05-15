@@ -41,8 +41,7 @@
 		
 	</HEAD>
 	<BODY class="BODY">
-		@section('header')
-		@show
+		@include('securhat/v1b0/app/layouts/header.php')
 		@section('content')
 		@show
 		@section('footer')
